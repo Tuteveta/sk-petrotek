@@ -32,11 +32,10 @@ export default function Navbar() {
               </div>
               <div className="leading-none">
                 <div className="text-white font-black text-base tracking-[0.3em] uppercase leading-none">SK</div>
-                <div className="text-[#dc2626] font-black text-[10px] tracking-[0.3em] uppercase leading-none mt-0.5">PROTECK</div>
               </div>
               <div className="hidden sm:block w-px h-8 bg-[#1e293b] ml-2" />
-              <span className="hidden sm:block text-white/40 text-[10px] font-mono uppercase tracking-wider leading-tight max-w-[100px]">
-                Industrial Power · PNG
+              <span className="hidden sm:block text-white/70 text-[11px] font-semibold tracking-wide leading-tight">
+                Petroteck Limited
               </span>
             </Link>
 

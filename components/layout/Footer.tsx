@@ -95,8 +95,9 @@ export default function Footer() {
               </div>
               <div className="leading-none">
                 <div className="text-[#d0d0d0] font-black text-sm tracking-[0.3em] uppercase">SK</div>
-                <div className="text-[#dc2626] font-black text-[9px] tracking-[0.3em] uppercase mt-0.5">PROTECK</div>
               </div>
+              <div className="w-px h-6 bg-[#1e293b]" />
+              <span className="text-[#8e9aad] text-[11px] font-semibold tracking-wide">Petroteck Limited</span>
             </Link>
             <p className="text-xs text-[#5a6374] leading-relaxed mb-5">
               Papua New Guinea&apos;s trusted partner for generator services, industrial power solutions, and community infrastructure development.
