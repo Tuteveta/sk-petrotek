@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award, FolderOpen, TrendingUp } from "lucide-react";
+import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const completedProjects = [
@@ -89,10 +89,10 @@ const inProgressProjects = [
 ];
 
 const metrics = [
-  { label: "Total Projects", value: "5", sub: "Gulf Province, PNG", icon: FolderOpen, color: "#dc2626" },
-  { label: "Completed", value: "3", sub: "Fully handed over", icon: CheckCircle, color: "#16a34a" },
-  { label: "In Progress", value: "2", sub: "Active construction", icon: Clock, color: "#d97706" },
-  { label: "Delivery Rate", value: "100%", sub: "On time, every time", icon: TrendingUp, color: "#dc2626" },
+  { label: "Total Projects", value: "5", sub: "Gulf Province, PNG", color: "#dc2626" },
+  { label: "Completed", value: "3", sub: "Fully handed over", color: "#16a34a" },
+  { label: "In Progress", value: "2", sub: "Active construction", color: "#d97706" },
+  { label: "Delivery Rate", value: "100%", sub: "On time, every time", color: "#dc2626" },
 ];
 
 export default function ProjectsPage() {
@@ -114,22 +114,15 @@ export default function ProjectsPage() {
           </div>
 
           {/* Metrics */}
-          <div className="mt-10 border border-white/10 rounded-xl overflow-hidden grid grid-cols-2 sm:grid-cols-4 divide-x divide-y sm:divide-y-0 divide-white/10">
-            {metrics.map((m) => {
-              const Icon = m.icon;
-              return (
-                <div key={m.label} className="flex items-center gap-4 px-6 py-5">
-                  <div className="w-10 h-10 rounded-lg shrink-0 flex items-center justify-center" style={{ backgroundColor: `${m.color}18`, border: `1px solid ${m.color}30` }}>
-                    <Icon className="w-4.5 h-4.5" style={{ color: m.color }} />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-black leading-none" style={{ color: m.color }}>{m.value}</p>
-                    <p className="text-white/50 text-[10px] font-mono uppercase tracking-widest mt-1">{m.label}</p>
-                    <p className="text-white/25 text-[10px] font-mono mt-0.5">{m.sub}</p>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {metrics.map((m) => (
+              <div key={m.label} className="bg-[#131c2e] border border-[#1e293b] rounded-xl px-6 py-5">
+                <div className="w-8 h-0.5 rounded-full mb-4" style={{ backgroundColor: m.color }} />
+                <p className="text-4xl font-black leading-none tracking-tight mb-3" style={{ color: m.color }}>{m.value}</p>
+                <p className="text-white/60 text-[10px] font-mono uppercase tracking-[0.18em] leading-tight">{m.label}</p>
+                <p className="text-white/25 text-[10px] font-mono mt-1">{m.sub}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
