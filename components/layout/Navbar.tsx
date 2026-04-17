@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Zap, Phone, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import TickerBar from "@/components/layout/TickerBar";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -21,9 +20,6 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Ticker */}
-      <TickerBar />
-
       {/* Main nav */}
       <div className="bg-[#1a1a1a] border-b border-[#333333]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
