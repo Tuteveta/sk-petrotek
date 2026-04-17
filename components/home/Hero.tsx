@@ -38,7 +38,7 @@ export default function Hero() {
 
           {/* Overline */}
           <div className="animate-fade-up flex items-center gap-3 mb-6">
-            <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.25em]">
+            <span className="text-white/70 text-[11px] font-mono font-semibold uppercase tracking-[0.25em]">
               Papua New Guinea&apos;s Industrial Power Experts
             </span>
           </div>
