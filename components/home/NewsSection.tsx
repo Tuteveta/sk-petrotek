@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const featured = {
   category: "Featured Update",
   date: "December 2025",
-  title: "SK Proteck Completes Kikori District School — Largest Infrastructure Project in Company History",
+  title: "SK Proteck Completes Kikori District School: Largest Infrastructure Project in Company History",
   excerpt: "The 10-classroom Kikori District School, complete with a full administrative block, stands as the largest community infrastructure project delivered by SK Proteck. The facility sets a new benchmark for rural education in Gulf Province.",
   image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&q=80&fit=crop",
   href: "/projects",
@@ -22,14 +22,14 @@ const news = [
   {
     category: "Expansion",
     date: "April 2026",
-    title: "SK Proteck Signs New Maintenance Contracts — Port Moresby Commercial Precinct",
+    title: "SK Proteck Signs New Maintenance Contracts in Port Moresby Commercial Precinct",
     excerpt: "Three new long-term preventive maintenance agreements signed with commercial and industrial operators in NCD.",
     href: "/contact",
   },
   {
     category: "Community",
     date: "March 2026",
-    title: "Community Engagement — Kerema District Schools Handover Ceremony",
+    title: "Community Engagement: Kerema District Schools Handover Ceremony",
     excerpt: "SK Proteck formally hands over completed school facilities to the Open Member for Kerema and local community leaders.",
     href: "/projects",
   },
@@ -37,11 +37,11 @@ const news = [
 
 export default function NewsSection() {
   return (
-    <section className="bg-white py-24 border-b border-gray-200">
+    <section className="bg-white py-10 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-3">
               <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
@@ -83,7 +83,6 @@ export default function NewsSection() {
 
             <div className="relative z-10 p-7">
               <div className="flex items-center gap-2 mb-3">
-                <div className="h-px w-5 bg-[#dc2626]" />
                 <span className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em]">{featured.category}</span>
                 <span className="text-white/40 text-[10px] font-mono">· {featured.date}</span>
               </div>

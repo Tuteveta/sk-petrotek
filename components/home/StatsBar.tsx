@@ -12,7 +12,7 @@ export default function StatsBar() {
     <section className="bg-white border-b border-gray-200">
 
       {/* Editorial header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 flex items-baseline justify-between gap-4 border-b border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4 flex items-baseline justify-between gap-4 border-b border-gray-200">
         <div>
           <div className="flex items-center gap-3 mb-2">
             <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Performance</span>
@@ -32,7 +32,7 @@ export default function StatsBar() {
             return (
               <div
                 key={stat.label}
-                className="group px-6 py-8 hover:bg-gray-50 transition-colors hover:border-t-2 hover:border-t-[#dc2626]"
+                className="group px-6 py-5 hover:bg-gray-50 transition-colors hover:border-t-2 hover:border-t-[#dc2626]"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 flex items-center justify-center group-hover:bg-[#dc2626]/20 transition-colors">
@@ -52,7 +52,7 @@ export default function StatsBar() {
         </div>
       </div>
 
-      <div className="pb-4" />
+      <div className="pb-2" />
     </section>
   );
 }

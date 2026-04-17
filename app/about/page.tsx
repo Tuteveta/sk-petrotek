@@ -36,7 +36,7 @@ export default function AboutPage() {
     <div className="bg-white">
 
       {/* Page Hero */}
-      <section className="bg-[#1a1a1a] py-14">
+      <section className="bg-[#1a1a1a] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <Breadcrumb crumbs={[{ label: "About" }]} />
@@ -52,7 +52,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-12 border-b border-gray-200">
+      <section className="py-8 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="bg-white border border-gray-200 rounded-xl p-7" style={{ borderLeft: "3px solid #dc2626" }}>
@@ -82,7 +82,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-12 border-b border-gray-200 bg-[#f8fafc]">
+      <section className="py-8 border-b border-gray-200 bg-[#f8fafc]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Our Journey</span>
@@ -110,7 +110,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-12 border-b border-gray-200">
+      <section className="py-8 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">What Drives Us</span>
@@ -138,7 +138,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-12 border-b border-gray-200 bg-[#f8fafc]">
+      <section className="py-8 border-b border-gray-200 bg-[#f8fafc]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">The People</span>
@@ -159,7 +159,7 @@ export default function AboutPage() {
       </section>
 
       {/* Certifications */}
-      <section className="py-12">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Credentials</span>

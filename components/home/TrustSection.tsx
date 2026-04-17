@@ -49,8 +49,8 @@ export default function TrustSection() {
     <section className="bg-white border-b border-gray-200">
 
       {/* Trust points */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-        <div className="mb-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
+        <div className="mb-7">
           <div className="flex items-center gap-3 mb-3">
             <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Proteck</span>
           </div>
@@ -84,7 +84,7 @@ export default function TrustSection() {
 
       {/* Testimonials */}
       <div className="bg-[#f8fafc] border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {testimonials.map((t) => (
               <div

@@ -67,7 +67,7 @@ export default function ProjectsPage() {
     <div className="bg-white">
 
       {/* Page Hero */}
-      <section className="bg-[#1a1a1a] py-14">
+      <section className="bg-[#1a1a1a] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <Breadcrumb crumbs={[{ label: "Projects" }]} />
@@ -93,7 +93,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Project Details */}
-      <section className="py-12 border-b border-gray-200">
+      <section className="py-8 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Project Details</span>
@@ -159,7 +159,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Impact Banner */}
-      <section className="py-12">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#1a1a1a] rounded-xl p-8 text-center">
             <h2 className="text-xl font-bold text-white mb-3">

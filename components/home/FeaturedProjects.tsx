@@ -34,7 +34,7 @@ const projects = [
 
 export default function FeaturedProjects() {
   return (
-    <section className="bg-[#f8fafc] py-16 border-b border-gray-200">
+    <section className="bg-[#f8fafc] py-10 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -47,7 +47,7 @@ export default function FeaturedProjects() {
               Schools That Changed <span className="text-[#dc2626]">a Province.</span>
             </h2>
             <p className="text-gray-400 text-xs font-mono mt-1">
-              Contracted by the Open Member for Kerema — Eastern Gulf Province, PNG
+              Contracted by the Open Member for Kerema, Eastern Gulf Province, PNG
             </p>
           </div>
           <Link href="/projects" className="shrink-0">
