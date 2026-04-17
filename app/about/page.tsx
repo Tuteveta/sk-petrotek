@@ -120,7 +120,6 @@ export default function AboutPage() {
                 <div
                   key={v.title}
                   className="bg-white border border-gray-200 rounded-xl p-5 hover:border-[#dc2626]/30 hover:shadow-sm transition-all"
-                  style={{ borderTop: "3px solid #dc2626" }}
                 >
                   <div className="w-8 h-8 rounded-lg flex items-center justify-center mb-4 bg-[#dc2626]/10 border border-[#dc2626]/20">
                     <Icon className="w-4 h-4 text-[#dc2626]" />
@@ -141,14 +140,16 @@ export default function AboutPage() {
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">The People</span>
             <h2 className="text-xl font-bold text-[#1a1a2a] mt-1">Meet the Team</h2>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {team.map((member) => (
-              <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-[#dc2626]/30 hover:shadow-sm transition-all">
-                <div className="w-14 h-14 rounded-xl bg-[#1a1a1a] flex items-center justify-center mx-auto mb-4 text-[#dc2626] font-black text-base">
+              <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-4 hover:border-[#dc2626]/30 hover:shadow-sm transition-all">
+                <div className="w-12 h-12 rounded-xl bg-[#1a1a1a] flex items-center justify-center shrink-0 text-white font-black text-sm">
                   {member.initials}
                 </div>
-                <h3 className="font-bold text-[#1a1a2a] text-sm">{member.name}</h3>
-                <p className="text-xs text-gray-400 font-mono mt-1">{member.role}</p>
+                <div>
+                  <h3 className="font-bold text-[#1a1a2a] text-sm">{member.name}</h3>
+                  <p className="text-xs text-gray-400 font-mono mt-0.5">{member.role}</p>
+                </div>
               </div>
             ))}
           </div>
