@@ -25,12 +25,12 @@ const cards = [
 
 export default function HighlightStrip() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 h-auto md:h-[400px]">
+    <section className="grid grid-cols-3 h-[240px]">
       {cards.map((card, i) => (
         <Link
           key={card.label}
           href={card.href}
-          className={`highlight-card relative overflow-hidden group h-[280px] md:h-full flex flex-col justify-end ${
+          className={`highlight-card relative overflow-hidden group flex flex-col justify-end ${
             i < cards.length - 1 ? "border-r border-[#2c3235]/60" : ""
           }`}
         >
@@ -50,19 +50,19 @@ export default function HighlightStrip() {
           <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#f59e0b] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           {/* Content */}
-          <div className="relative z-10 p-7 lg:p-8">
-            <div className="flex items-center gap-2 mb-3">
-              <div className="h-px w-5 bg-[#f59e0b]" />
+          <div className="relative z-10 p-5 lg:p-6">
+            <div className="flex items-center gap-2 mb-2">
+              <div className="h-px w-4 bg-[#f59e0b]" />
               <span className="text-[#f59e0b] text-[10px] font-mono font-semibold uppercase tracking-[0.2em]">
                 {card.label}
               </span>
             </div>
-            <h3 className="text-white text-xl lg:text-2xl font-black leading-tight mb-5">
+            <h3 className="text-white text-base lg:text-lg font-black leading-tight mb-3">
               {card.title}
             </h3>
-            <div className="flex items-center gap-2 text-[#8e9aad] group-hover:text-[#f59e0b] transition-colors text-xs font-mono uppercase tracking-wider">
+            <div className="flex items-center gap-2 text-[#8e9aad] group-hover:text-[#f59e0b] transition-colors text-[10px] font-mono uppercase tracking-wider">
               <span>Learn more</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
             </div>
           </div>
         </Link>
