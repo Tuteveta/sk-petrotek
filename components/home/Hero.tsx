@@ -76,22 +76,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Bottom metrics panel */}
-        <div className="absolute bottom-8 left-6 sm:left-10 lg:left-14">
-          <div className="flex divide-x divide-white/10 border border-white/10 bg-[#1a1a1a]/80 backdrop-blur-sm">
-            {[
-              { value: "15+", label: "Years" },
-              { value: "200+", label: "Generators" },
-              { value: "3", label: "Schools" },
-              { value: "100%", label: "Delivery" },
-            ].map(({ value, label }) => (
-              <div key={label} className="px-5 py-3 text-center">
-                <p className="text-[#dc2626] font-black text-lg leading-none tabular-nums">{value}</p>
-                <p className="text-white/40 text-[10px] font-mono uppercase tracking-wider mt-1">{label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Scroll indicator */}
