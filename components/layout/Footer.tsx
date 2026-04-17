@@ -30,28 +30,33 @@ export default function Footer() {
   return (
     <footer className="bg-[#1a1a1a]">
 
-      {/* Pre-footer CTA band */}
-      <div className="border-b border-gray-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div>
-            <p className="text-gray-400 text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Partner with PNG's industrial leader</p>
-            <h3 className="text-2xl lg:text-3xl font-black text-[#1a1a2a] tracking-tight">
-              Ready to work with SK Proteck?
-            </h3>
-          </div>
-          <div className="flex items-center gap-3 shrink-0">
-            <Link href="/contact">
-              <button className="group inline-flex items-center gap-2 h-10 px-7 bg-[#dc2626] text-white text-xs font-black uppercase tracking-[0.15em] hover:bg-[#b91c1c] transition-colors">
-                Get a Quote
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </Link>
-            <a href="tel:+675XXXXXXXX">
-              <button className="inline-flex items-center gap-2 h-10 px-7 border border-gray-200 text-gray-500 text-xs font-semibold uppercase tracking-[0.15em] hover:border-[#dc2626] hover:text-[#dc2626] transition-colors">
-                <Phone className="w-3.5 h-3.5" />
-                Call Now
-              </button>
-            </a>
+      {/* Pre-footer CTA card */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 px-8 py-7">
+              <div>
+                <p className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Partner with PNG&apos;s industrial leader</p>
+                <h3 className="text-xl font-black text-white tracking-tight">
+                  Ready to work with SK Proteck?
+                </h3>
+                <p className="text-white/40 text-xs mt-1.5">Generator services, maintenance contracts, and community infrastructure — all in one team.</p>
+              </div>
+              <div className="flex items-center gap-3 shrink-0">
+                <Link href="/contact">
+                  <button className="group inline-flex items-center gap-2 h-10 px-6 bg-[#dc2626] text-white text-xs font-black uppercase tracking-[0.15em] rounded-lg hover:bg-[#b91c1c] transition-colors">
+                    Get a Quote
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </Link>
+                <a href="tel:+675XXXXXXXX">
+                  <button className="inline-flex items-center gap-2 h-10 px-6 border border-white/15 text-white/70 text-xs font-semibold uppercase tracking-[0.15em] rounded-lg hover:border-white/40 hover:text-white transition-colors">
+                    <Phone className="w-3.5 h-3.5" />
+                    Call Now
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
