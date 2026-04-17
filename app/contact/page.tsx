@@ -1,5 +1,6 @@
 import ContactForm from "@/components/contact/ContactForm";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
+import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const contactDetails = [
   {
@@ -33,6 +34,7 @@ export default function ContactPage() {
       <section className="bg-[#1a1a2e] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
+            <Breadcrumb crumbs={[{ label: "Contact" }]} />
             <span className="text-[#f59e0b] text-sm font-bold uppercase tracking-widest">Get in Touch</span>
             <h1 className="text-5xl font-black text-white mt-3 mb-6">Let&apos;s Power Your Business</h1>
             <p className="text-gray-300 text-lg leading-relaxed">

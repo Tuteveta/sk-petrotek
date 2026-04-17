@@ -24,7 +24,8 @@ export default function ProjectsChart() {
     if (!svgRef.current || !containerRef.current) return;
 
     const drawChart = () => {
-      const container = containerRef.current!;
+      if (!containerRef.current || !svgRef.current) return;
+      const container = containerRef.current;
       const totalWidth = container.clientWidth || 600;
 
       const margin = { top: 20, right: 80, bottom: 50, left: 220 };

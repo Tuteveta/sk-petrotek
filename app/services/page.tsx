@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const services = [
   {
@@ -104,6 +105,7 @@ export default function ServicesPage() {
       <section className="bg-[#1a1a2e] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
+            <Breadcrumb crumbs={[{ label: "Services" }]} />
             <span className="text-[#f59e0b] text-sm font-bold uppercase tracking-widest">What We Offer</span>
             <h1 className="text-5xl font-black text-white mt-3 mb-6">
               Complete Industrial Power Services

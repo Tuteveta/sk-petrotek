@@ -1,5 +1,6 @@
 import { Target, Eye, Heart, Shield, Zap, Users, Award, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const values = [
   {
@@ -47,6 +48,7 @@ export default function AboutPage() {
       <section className="bg-[#1a1a2e] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
+            <Breadcrumb crumbs={[{ label: "About" }]} />
             <span className="text-[#f59e0b] text-sm font-bold uppercase tracking-widest">About SK Proteck</span>
             <h1 className="text-5xl font-black text-white mt-3 mb-6">
               15 Years of Power. A Legacy of Community.

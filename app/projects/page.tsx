@@ -2,6 +2,7 @@ import { MapPin, Calendar, Building2, CheckCircle, Users, Award } from "lucide-r
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import ProjectsChart from "@/components/projects/ProjectsChart";
+import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const projects = [
   {
@@ -74,6 +75,7 @@ export default function ProjectsPage() {
       <section className="bg-[#1a1a2e] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
+            <Breadcrumb crumbs={[{ label: "Projects" }]} />
             <span className="text-[#f59e0b] text-sm font-bold uppercase tracking-widest">Our Projects</span>
             <h1 className="text-5xl font-black text-white mt-3 mb-6">
               Building Futures in Gulf Province
