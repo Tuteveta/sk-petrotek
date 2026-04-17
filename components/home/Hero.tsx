@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-[#1a1a1a]">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-[#334155]">
 
       {/* Full-bleed background image */}
       <Image
@@ -17,8 +17,8 @@ export default function Hero() {
       />
 
       {/* Layered overlays */}
-      <div className="absolute inset-0 bg-[#1a1a1a]/75" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/95 via-[#1a1a1a]/60 to-[#1a1a1a]/20" />
+      <div className="absolute inset-0 bg-[#334155]/75" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#334155]/95 via-[#334155]/60 to-[#334155]/20" />
 
       {/* Left red accent bar */}
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#dc2626]" />

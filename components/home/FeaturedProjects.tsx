@@ -75,9 +75,9 @@ export default function FeaturedProjects() {
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-[#1a1a1a]/30" />
+                <div className="absolute inset-0 bg-[#334155]/30" />
                 {/* Status badge */}
-                <div className="absolute top-3 left-3 flex items-center gap-1.5 bg-[#1a1a1a]/80 backdrop-blur-sm px-2.5 py-1">
+                <div className="absolute top-3 left-3 flex items-center gap-1.5 bg-[#334155]/80 backdrop-blur-sm px-2.5 py-1">
                   <CheckCircle className="w-3 h-3 text-white" />
                   <span className="text-white text-[10px] font-mono uppercase tracking-wider">{project.year}</span>
                 </div>

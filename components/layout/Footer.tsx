@@ -28,12 +28,12 @@ const legalLinks = ["Privacy Policy", "Terms of Use", "IPA Registration"];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a]">
+    <footer className="bg-[#334155]">
 
       {/* Pre-footer CTA card */}
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="bg-[#1a1a1a] rounded-xl overflow-hidden">
+          <div className="bg-[#334155] rounded-xl overflow-hidden">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 px-8 py-7">
               <div>
                 <p className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Partner with PNG&apos;s industrial leader</p>
@@ -69,7 +69,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-5">
               <div className="w-9 h-9 bg-[#dc2626] flex items-center justify-center shrink-0">
-                <Zap className="w-4.5 h-4.5 text-[#1a1a1a]" />
+                <Zap className="w-4.5 h-4.5 text-[#334155]" />
               </div>
               <div className="leading-none">
                 <div className="text-[#d0d0d0] font-black text-sm tracking-[0.3em] uppercase">SK</div>
@@ -104,7 +104,7 @@ export default function Footer() {
 
           {/* Column 2: Navigation */}
           <div>
-            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#333333]">
+            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#475569]">
               Navigation
             </h3>
             <ul className="space-y-2.5">
@@ -120,7 +120,7 @@ export default function Footer() {
 
           {/* Column 3: Services */}
           <div>
-            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#333333]">
+            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#475569]">
               Services
             </h3>
             <ul className="space-y-2.5">
@@ -136,7 +136,7 @@ export default function Footer() {
 
           {/* Column 4: Projects */}
           <div>
-            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#333333]">
+            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#475569]">
               Projects
             </h3>
             <ul className="space-y-2.5 mb-6">
@@ -156,7 +156,7 @@ export default function Footer() {
 
           {/* Column 5: Contact */}
           <div>
-            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#333333]">
+            <h3 className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em] mb-5 pb-2 border-b border-[#475569]">
               Contact
             </h3>
             <ul className="space-y-3.5 mb-5">
@@ -186,7 +186,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[#333333]">
+      <div className="border-t border-[#475569]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[10px] text-[#5a6374] font-mono">
             &copy; {new Date().getFullYear()} SK Proteck Ltd. All rights reserved.
@@ -195,7 +195,7 @@ export default function Footer() {
             {legalLinks.map((l, i) => (
               <span key={l} className="flex items-center gap-4">
                 <span className="text-[10px] text-[#5a6374] hover:text-[#8e9aad] font-mono cursor-pointer transition-colors">{l}</span>
-                {i < legalLinks.length - 1 && <span className="text-[#333333] text-xs">·</span>}
+                {i < legalLinks.length - 1 && <span className="text-[#475569] text-xs">·</span>}
               </span>
             ))}
           </div>
