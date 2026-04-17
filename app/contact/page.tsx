@@ -59,7 +59,7 @@ export default function ContactPage() {
                     const Icon = detail.icon;
                     return (
                       <div key={detail.label} className="flex items-start gap-3">
-                        <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-xl flex items-center justify-center shrink-0 mt-0.5">
                           <Icon className="w-3.5 h-3.5 text-[#dc2626]" />
                         </div>
                         <div>

@@ -35,7 +35,7 @@ export default function StatsBar() {
                 className="group px-6 py-5 hover:bg-gray-50 transition-colors hover:border-t-2 hover:border-t-[#dc2626]"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 flex items-center justify-center group-hover:bg-[#dc2626]/20 transition-colors">
+                  <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-xl flex items-center justify-center group-hover:bg-[#dc2626]/20 transition-colors">
                     <Icon className="w-4 h-4 text-[#dc2626]" />
                   </div>
                   <div className="flex items-center gap-1 text-[#73bf69]">

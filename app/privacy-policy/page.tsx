@@ -71,7 +71,7 @@ export default function PrivacyPolicyPage() {
           <div className="max-w-3xl">
             <Breadcrumb crumbs={[{ label: "Privacy Policy" }]} />
             <div className="flex items-center gap-2 mb-2">
-              <div className="w-5 h-5 bg-[#dc2626]/10 border border-[#dc2626]/20 flex items-center justify-center">
+              <div className="w-5 h-5 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-xl flex items-center justify-center">
                 <Shield className="w-3 h-3 text-[#dc2626]" />
               </div>
               <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Legal</span>

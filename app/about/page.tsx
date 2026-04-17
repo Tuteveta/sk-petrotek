@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="bg-white border border-gray-200 rounded-xl p-7">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-xl flex items-center justify-center">
                   <Target className="w-4 h-4 text-[#dc2626]" />
                 </div>
                 <h2 className="text-sm font-bold text-[#1a1a2a] uppercase tracking-wider">Our Mission</h2>
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-7">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-xl flex items-center justify-center">
                   <Eye className="w-4 h-4 text-[#dc2626]" />
                 </div>
                 <h2 className="text-sm font-bold text-[#1a1a2a] uppercase tracking-wider">Our Vision</h2>
@@ -92,7 +92,7 @@ export default function AboutPage() {
             {milestones.map((m, i) => (
               <div key={m.year} className="bg-white border border-gray-200 rounded-xl p-5 flex gap-4">
                 <div className="shrink-0">
-                  <div className="w-12 h-12 bg-[#dc2626] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#dc2626] rounded-xl flex items-center justify-center">
                     <span className="text-white font-black text-[10px] leading-tight text-center">{m.year}</span>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   key={v.title}
                   className="bg-white border border-gray-200 rounded-xl p-5 hover:border-[#dc2626]/30 hover:shadow-sm transition-all"
                 >
-                  <div className="w-8 h-8 rounded-lg flex items-center justify-center mb-4 bg-[#dc2626]/10 border border-[#dc2626]/20">
+                  <div className="w-8 h-8 rounded-xl flex items-center justify-center mb-4 bg-[#dc2626]/10 border border-[#dc2626]/20">
                     <Icon className="w-4 h-4 text-[#dc2626]" />
                   </div>
                   <h3 className="text-sm font-bold text-[#1a1a2a] mb-2">{v.title}</h3>
@@ -168,7 +168,7 @@ export default function AboutPage() {
               const Icon = cert.icon;
               return (
                 <div key={cert.label} className="bg-white border border-gray-200 rounded-xl p-5 text-center hover:border-[#dc2626]/30 hover:shadow-sm transition-all">
-                  <div className="w-10 h-10 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <div className="w-10 h-10 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Icon className="w-5 h-5 text-[#dc2626]" />
                   </div>
                   <p className="text-[#1a1a2a] font-semibold text-xs">{cert.label}</p>

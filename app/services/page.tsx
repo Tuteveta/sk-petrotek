@@ -109,7 +109,7 @@ export default function ServicesPage() {
                 >
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-4">
-                      <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-[#dc2626]/10 border border-[#dc2626]/20">
+                      <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-[#dc2626]/10 border border-[#dc2626]/20">
                         <Icon className="w-4 h-4 text-[#dc2626]" />
                       </div>
                       <span className="text-xs font-mono px-2 py-0.5 rounded-full border border-[#dc2626]/30 bg-[#dc2626]/5 text-[#dc2626]">
