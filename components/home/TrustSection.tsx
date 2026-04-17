@@ -85,29 +85,31 @@ export default function TrustSection() {
 
       {/* Testimonials */}
       <div className="bg-[#f8fafc] border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {testimonials.map((t) => (
               <div
                 key={t.author}
-                className="bg-white border border-gray-200 p-10"
+                className="bg-white border border-gray-200 px-5 py-4 flex items-start gap-4"
                 style={{ borderLeft: "3px solid #dc2626" }}
               >
-                <Quote className="w-8 h-8 text-[#dc2626]/30 mb-5" />
-                <p className="text-gray-500 text-base leading-relaxed italic mb-8">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <div className="flex items-end justify-between gap-4">
-                  <div>
-                    <p className="text-[#1a1a2a] font-bold text-sm">{t.author}</p>
-                    <p className="text-gray-400 text-xs font-mono mt-0.5">{t.role}</p>
+                <Quote className="w-4 h-4 text-[#dc2626]/30 shrink-0 mt-0.5" />
+                <div className="flex-1 min-w-0">
+                  <p className="text-gray-500 text-xs leading-relaxed italic mb-3">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-[#1a1a2a] font-bold text-xs">{t.author}</p>
+                      <p className="text-gray-400 text-[10px] font-mono">{t.role}</p>
+                    </div>
+                    <span
+                      className="text-[9px] font-mono px-2 py-0.5 border whitespace-nowrap shrink-0"
+                      style={{ color: t.tagColor, borderColor: `${t.tagColor}40`, backgroundColor: `${t.tagColor}10` }}
+                    >
+                      {t.tag}
+                    </span>
                   </div>
-                  <span
-                    className="text-[9px] font-mono px-2 py-1 border whitespace-nowrap"
-                    style={{ color: t.tagColor, borderColor: `${t.tagColor}40`, backgroundColor: `${t.tagColor}10` }}
-                  >
-                    {t.tag}
-                  </span>
                 </div>
               </div>
             ))}
