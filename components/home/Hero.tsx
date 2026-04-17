@@ -20,9 +20,6 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[#0f172a]/75" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/95 via-[#0f172a]/60 to-[#0f172a]/20" />
 
-      {/* Left red accent bar */}
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#dc2626]" />
-
       {/* Ghost watermark */}
       <div
         className="text-stroke-amber absolute bottom-0 left-0 leading-none select-none pointer-events-none whitespace-nowrap"
