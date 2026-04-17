@@ -4,7 +4,7 @@ import { ArrowRight, Circle } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#111217]">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-[#111217]">
 
       {/* Full-bleed background image */}
       <Image
