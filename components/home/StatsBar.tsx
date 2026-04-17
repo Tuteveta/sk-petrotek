@@ -15,7 +15,6 @@ export default function StatsBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 flex items-baseline justify-between gap-4 border-b border-gray-200">
         <div>
           <div className="flex items-center gap-3 mb-2">
-            <div className="h-px w-8 bg-[#f59e0b]" />
             <span className="text-[#f59e0b] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Performance</span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-black text-[#1a1a2a] tracking-tight">
