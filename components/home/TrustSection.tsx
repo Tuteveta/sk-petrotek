@@ -66,7 +66,6 @@ export default function TrustSection() {
               <div
                 key={point.title}
                 className="bg-[#f8fafc] border border-gray-200 rounded-xl p-8 hover:border-gray-300 transition-colors"
-                style={{ borderTop: `3px solid ${point.color}` }}
               >
                 <div
                   className="w-12 h-12 flex items-center justify-center mb-6 border-2 rounded-xl"
