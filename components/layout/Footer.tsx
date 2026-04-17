@@ -90,7 +90,7 @@ export default function Footer() {
           {/* Column 1–2: Brand (spans 2 on lg) */}
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 bg-[#dc2626] flex items-center justify-center shrink-0">
+              <div className="w-9 h-9 bg-[#dc2626] rounded-full flex items-center justify-center shrink-0">
                 <Zap className="w-4.5 h-4.5 text-[#0f172a]" />
               </div>
               <div className="leading-none">

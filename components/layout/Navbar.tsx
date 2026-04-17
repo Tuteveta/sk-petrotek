@@ -27,7 +27,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group shrink-0">
-              <div className="w-10 h-10 bg-[#dc2626] flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center shrink-0">
                 <Zap className="w-5 h-5 text-white" />
               </div>
               <div className="leading-none">
