@@ -6,25 +6,25 @@ const trustPoints = [
     icon: ShieldCheck,
     title: "Certified Technicians",
     desc: "All engineers professionally certified and trained to international generator service standards.",
-    color: "#f59e0b",
+    color: "#dc2626",
   },
   {
     icon: Clock,
     title: "24/7 Emergency Support",
     desc: "Power failures don't keep business hours. Our rapid response team is available around the clock.",
-    color: "#f59e0b",
+    color: "#dc2626",
   },
   {
     icon: Users,
     title: "Government Trusted",
     desc: "Selected by the Open Member for Kerema for critical school construction in Gulf Province.",
-    color: "#f59e0b",
+    color: "#dc2626",
   },
   {
     icon: ThumbsUp,
     title: "Guaranteed Quality",
     desc: "Every project and service is backed by our quality guarantee and transparent reporting.",
-    color: "#f59e0b",
+    color: "#dc2626",
   },
 ];
 
@@ -34,14 +34,14 @@ const testimonials = [
     author: "Office of the Open Member for Kerema",
     role: "Gulf Province, Papua New Guinea",
     tag: "Construction Client",
-    tagColor: "#f59e0b",
+    tagColor: "#dc2626",
   },
   {
     quote: "Our generator maintenance contract with SK Proteck has reduced downtime by over 80%. They are genuinely reliable.",
     author: "Industrial Client",
     role: "Port Moresby Operations",
     tag: "Maintenance Client",
-    tagColor: "#f59e0b",
+    tagColor: "#dc2626",
   },
 ];
 
@@ -53,10 +53,10 @@ export default function TrustSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="mb-14">
           <div className="flex items-center gap-3 mb-3">
-            <span className="text-[#f59e0b] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Proteck</span>
+            <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Proteck</span>
           </div>
           <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight">
-            Built on Trust &amp; <span className="text-[#f59e0b]">Results</span>
+            Built on Trust &amp; <span className="text-[#dc2626]">Results</span>
           </h2>
         </div>
 
@@ -91,9 +91,9 @@ export default function TrustSection() {
               <div
                 key={t.author}
                 className="bg-white border border-gray-200 p-10"
-                style={{ borderLeft: "3px solid #f59e0b" }}
+                style={{ borderLeft: "3px solid #dc2626" }}
               >
-                <Quote className="w-8 h-8 text-[#f59e0b]/30 mb-5" />
+                <Quote className="w-8 h-8 text-[#dc2626]/30 mb-5" />
                 <p className="text-gray-500 text-base leading-relaxed italic mb-8">
                   &ldquo;{t.quote}&rdquo;
                 </p>
@@ -116,29 +116,29 @@ export default function TrustSection() {
       </div>
 
       {/* Full-bleed amber CTA */}
-      <div className="bg-[#f59e0b]">
+      <div className="bg-[#dc2626]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-px w-8 bg-[#111217]/40" />
-              <span className="text-[#111217]/60 text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Get Started</span>
+              <div className="h-px w-8 bg-[#1a1a1a]/40" />
+              <span className="text-[#1a1a1a]/60 text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Get Started</span>
             </div>
-            <h3 className="text-2xl lg:text-3xl font-black text-[#111217] tracking-tight leading-tight">
+            <h3 className="text-2xl lg:text-3xl font-black text-[#1a1a1a] tracking-tight leading-tight">
               Ready to Power Your Business?
             </h3>
-            <p className="text-[#111217]/70 text-sm leading-relaxed mt-3">
+            <p className="text-[#1a1a1a]/70 text-sm leading-relaxed mt-3">
               Contact SK Proteck today for a free consultation on generator services, maintenance contracts, or project partnerships.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
             <Link href="/contact">
-              <button className="group inline-flex items-center gap-3 h-14 px-10 bg-[#111217] text-[#f59e0b] text-sm font-black uppercase tracking-[0.15em] hover:bg-[#1f2329] transition-colors">
+              <button className="group inline-flex items-center gap-3 h-14 px-10 bg-[#1a1a1a] text-[#dc2626] text-sm font-black uppercase tracking-[0.15em] hover:bg-[#1f2329] transition-colors">
                 Get a Free Quote
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
               </button>
             </Link>
             <Link href="/services">
-              <button className="inline-flex items-center gap-3 h-14 px-10 border-2 border-[#111217]/30 text-[#111217] text-sm font-semibold uppercase tracking-[0.15em] hover:border-[#111217] transition-colors">
+              <button className="inline-flex items-center gap-3 h-14 px-10 border-2 border-[#1a1a1a]/30 text-[#1a1a1a] text-sm font-semibold uppercase tracking-[0.15em] hover:border-[#1a1a1a] transition-colors">
                 Our Services
               </button>
             </Link>

@@ -47,20 +47,20 @@ export default function HighlightStrip() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#111217] via-[#111217]/55 to-[#111217]/10 transition-opacity duration-300 group-hover:from-[#111217]/95" />
 
           {/* Left amber accent — appears on hover */}
-          <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#f59e0b] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#dc2626] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           {/* Content */}
           <div className="relative z-10 p-5 lg:p-6">
             <div className="flex items-center gap-2 mb-2">
-              <div className="h-px w-4 bg-[#f59e0b]" />
-              <span className="text-[#f59e0b] text-[10px] font-mono font-semibold uppercase tracking-[0.2em]">
+              <div className="h-px w-4 bg-[#dc2626]" />
+              <span className="text-[#dc2626] text-[10px] font-mono font-semibold uppercase tracking-[0.2em]">
                 {card.label}
               </span>
             </div>
             <h3 className="text-white text-base lg:text-lg font-black leading-tight mb-3">
               {card.title}
             </h3>
-            <div className="flex items-center gap-2 text-[#8e9aad] group-hover:text-[#f59e0b] transition-colors text-[10px] font-mono uppercase tracking-wider">
+            <div className="flex items-center gap-2 text-[#8e9aad] group-hover:text-[#dc2626] transition-colors text-[10px] font-mono uppercase tracking-wider">
               <span>Learn more</span>
               <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
             </div>

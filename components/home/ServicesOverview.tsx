@@ -9,7 +9,7 @@ const services = [
     description: "Comprehensive generator filtering, cleaning, and oil services to keep your power systems running at peak efficiency. We handle all brands and capacities across Papua New Guinea.",
     features: ["Filter Replacement", "Fuel Filtration", "Oil Analysis & Change", "Lubrication Management"],
     href: "/services",
-    accentColor: "#f59e0b",
+    accentColor: "#dc2626",
   },
   {
     icon: Wrench,
@@ -40,19 +40,19 @@ export default function ServicesOverview() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-[#f59e0b] text-xs font-mono font-semibold uppercase tracking-[0.2em]">
+              <span className="text-[#dc2626] text-xs font-mono font-semibold uppercase tracking-[0.2em]">
                 Service Catalogue
               </span>
             </div>
             <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
-              End-to-End Power <span className="text-[#f59e0b]">Solutions</span>
+              End-to-End Power <span className="text-[#dc2626]">Solutions</span>
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed max-w-lg mt-3">
               From generator servicing to community infrastructure, SK Proteck delivers reliable, professional results across Papua New Guinea.
             </p>
           </div>
           <Link href="/services" className="shrink-0">
-            <button className="group inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wider text-gray-500 hover:text-[#f59e0b] transition-colors">
+            <button className="group inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wider text-gray-500 hover:text-[#dc2626] transition-colors">
               View full catalogue
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </button>

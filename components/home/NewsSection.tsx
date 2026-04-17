@@ -44,16 +44,16 @@ export default function NewsSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-[#f59e0b] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
+              <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
                 Latest Updates
               </span>
             </div>
             <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight">
-              News &amp; <span className="text-[#f59e0b]">Announcements</span>
+              News &amp; <span className="text-[#dc2626]">Announcements</span>
             </h2>
           </div>
           <Link href="/projects">
-            <button className="group inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-gray-400 hover:text-[#f59e0b] transition-colors shrink-0">
+            <button className="group inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-gray-400 hover:text-[#dc2626] transition-colors shrink-0">
               View all updates
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -74,7 +74,7 @@ export default function NewsSection() {
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#111217] via-[#111217]/50 to-transparent" />
-            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#f59e0b] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#dc2626] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             {/* Status chip */}
             <div className="absolute top-4 right-4 bg-[#111217]/80 backdrop-blur-sm border border-white/10 px-3 py-1.5">
@@ -83,13 +83,13 @@ export default function NewsSection() {
 
             <div className="relative z-10 p-7">
               <div className="flex items-center gap-2 mb-3">
-                <div className="h-px w-5 bg-[#f59e0b]" />
-                <span className="text-[#f59e0b] text-[10px] font-mono uppercase tracking-[0.2em]">{featured.category}</span>
+                <div className="h-px w-5 bg-[#dc2626]" />
+                <span className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em]">{featured.category}</span>
                 <span className="text-white/40 text-[10px] font-mono">· {featured.date}</span>
               </div>
               <h3 className="text-white text-xl sm:text-2xl font-black leading-tight mb-3 max-w-lg">{featured.title}</h3>
               <p className="text-white/60 text-sm leading-relaxed max-w-md mb-5">{featured.excerpt}</p>
-              <div className="flex items-center gap-2 text-[#f59e0b] text-xs font-mono uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-[#dc2626] text-xs font-mono uppercase tracking-wider">
                 <span>Read more</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </div>
@@ -105,16 +105,16 @@ export default function NewsSection() {
                 className={`group p-6 hover:bg-gray-50 transition-colors ${i < news.length - 1 ? "border-b border-gray-100" : ""}`}
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[#f59e0b] text-[9px] font-mono uppercase tracking-[0.15em] bg-[#f59e0b]/10 border border-[#f59e0b]/20 px-1.5 py-0.5">
+                  <span className="text-[#dc2626] text-[9px] font-mono uppercase tracking-[0.15em] bg-[#dc2626]/10 border border-[#dc2626]/20 px-1.5 py-0.5">
                     {item.category}
                   </span>
                   <span className="text-gray-400 text-[10px] font-mono">{item.date}</span>
                 </div>
-                <h4 className="text-[#1a1a2a] text-sm font-bold leading-snug mb-2 group-hover:text-[#f59e0b] transition-colors">
+                <h4 className="text-[#1a1a2a] text-sm font-bold leading-snug mb-2 group-hover:text-[#dc2626] transition-colors">
                   {item.title}
                 </h4>
                 <p className="text-gray-500 text-xs leading-relaxed mb-3">{item.excerpt}</p>
-                <span className="text-[#f59e0b] text-[10px] font-mono uppercase tracking-wider flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="text-[#dc2626] text-[10px] font-mono uppercase tracking-wider flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                   Read more <ArrowRight className="w-3 h-3" />
                 </span>
               </Link>

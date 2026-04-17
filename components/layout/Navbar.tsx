@@ -25,21 +25,21 @@ export default function Navbar() {
       <TickerBar />
 
       {/* Main nav */}
-      <div className="bg-[#161719] border-b border-[#2c3235]">
+      <div className="bg-[#1a1a1a] border-b border-[#333333]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group shrink-0">
-              <div className="w-10 h-10 bg-[#f59e0b] flex items-center justify-center shrink-0">
-                <Zap className="w-5 h-5 text-[#111217]" />
+              <div className="w-10 h-10 bg-[#dc2626] flex items-center justify-center shrink-0">
+                <Zap className="w-5 h-5 text-white" />
               </div>
               <div className="leading-none">
-                <div className="text-[#d0d0d0] font-black text-base tracking-[0.3em] uppercase leading-none">SK</div>
-                <div className="text-[#f59e0b] font-black text-[10px] tracking-[0.3em] uppercase leading-none mt-0.5">PROTECK</div>
+                <div className="text-white font-black text-base tracking-[0.3em] uppercase leading-none">SK</div>
+                <div className="text-[#dc2626] font-black text-[10px] tracking-[0.3em] uppercase leading-none mt-0.5">PROTECK</div>
               </div>
-              <div className="hidden sm:block w-px h-8 bg-[#2c3235] ml-2" />
-              <span className="hidden sm:block text-[#5a6374] text-[10px] font-mono uppercase tracking-wider leading-tight max-w-[100px]">
+              <div className="hidden sm:block w-px h-8 bg-[#333333] ml-2" />
+              <span className="hidden sm:block text-white/40 text-[10px] font-mono uppercase tracking-wider leading-tight max-w-[100px]">
                 Industrial Power · PNG
               </span>
             </Link>
@@ -55,8 +55,8 @@ export default function Navbar() {
                     className={cn(
                       "relative flex items-center gap-1 px-4 h-16 text-xs font-semibold uppercase tracking-[0.12em] transition-colors border-b-2",
                       active
-                        ? "text-[#f59e0b] border-[#f59e0b]"
-                        : "text-[#8e9aad] hover:text-[#d0d0d0] border-transparent hover:border-[#3d4450]"
+                        ? "text-[#dc2626] border-[#dc2626]"
+                        : "text-white/50 hover:text-white border-transparent hover:border-white/20"
                     )}
                   >
                     {link.label}
@@ -70,14 +70,14 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-3">
               <a
                 href="tel:+675XXXXXXXX"
-                className="hidden xl:flex items-center gap-2 text-[#8e9aad] hover:text-[#f59e0b] transition-colors text-xs font-mono"
+                className="hidden xl:flex items-center gap-2 text-white/50 hover:text-white transition-colors text-xs font-mono"
               >
                 <Phone className="w-3.5 h-3.5" />
                 +675 XXX XXXX
               </a>
-              <div className="hidden xl:block w-px h-5 bg-[#2c3235]" />
+              <div className="hidden xl:block w-px h-5 bg-[#333333]" />
               <Link href="/contact">
-                <button className="h-9 px-6 text-xs font-bold uppercase tracking-[0.12em] bg-[#f59e0b] text-[#111217] hover:bg-[#d97706] transition-colors border-r-2 border-[#d97706]">
+                <button className="h-9 px-6 text-xs font-bold uppercase tracking-[0.12em] bg-[#dc2626] text-white hover:bg-[#b91c1c] transition-colors">
                   Get a Quote
                 </button>
               </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
             {/* Mobile toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden text-[#8e9aad] hover:text-[#d0d0d0] transition-colors p-1"
+              className="md:hidden text-white/50 hover:text-white transition-colors p-1"
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -100,7 +100,7 @@ export default function Navbar() {
         "md:hidden overflow-hidden transition-all duration-200",
         mobileOpen ? "max-h-96" : "max-h-0"
       )}>
-        <div className="bg-[#111217] border-b border-[#2c3235]">
+        <div className="bg-[#1a1a1a] border-b border-[#333333]">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
@@ -109,10 +109,10 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
-                  "flex items-center px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.12em] border-b border-[#2c3235] transition-colors",
+                  "flex items-center px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.12em] border-b border-[#333333] transition-colors",
                   active
-                    ? "text-[#f59e0b] bg-[#f59e0b]/5 border-l-2 border-l-[#f59e0b]"
-                    : "text-[#8e9aad] hover:text-[#d0d0d0] hover:bg-[#1f2329]"
+                    ? "text-[#dc2626] bg-[#dc2626]/5 border-l-2 border-l-[#dc2626]"
+                    : "text-white/50 hover:text-white hover:bg-white/5"
                 )}
               >
                 {link.label}
@@ -121,7 +121,7 @@ export default function Navbar() {
           })}
           <div className="p-4">
             <Link href="/contact" onClick={() => setMobileOpen(false)}>
-              <button className="w-full h-10 text-xs font-bold uppercase tracking-[0.12em] bg-[#f59e0b] text-[#111217] hover:bg-[#d97706] transition-colors">
+              <button className="w-full h-10 text-xs font-bold uppercase tracking-[0.12em] bg-[#dc2626] text-white hover:bg-[#b91c1c] transition-colors">
                 Get a Quote
               </button>
             </Link>

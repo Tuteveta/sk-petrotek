@@ -8,8 +8,8 @@
   --color-border: #2c3235;
   --color-primary: #111217;
   --color-primary-light: #181b1f;
-  --color-accent: #f59e0b;
-  --color-accent-dark: #d97706;
+  --color-accent: #dc2626;
+  --color-accent-dark: #b91c1c;
   --color-text: #d0d0d0;
   --color-text-muted: #8e9aad;
   --color-text-faint: #5a6374;
@@ -104,7 +104,7 @@ body {
 
 /* Ghost/outlined text treatment for hero watermark */
 .text-stroke-amber {
-  -webkit-text-stroke: 1px #f59e0b;
+  -webkit-text-stroke: 1px #dc2626;
   color: transparent;
 }
 
