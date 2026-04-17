@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award } from "lucide-react";
+import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award, FolderOpen, TrendingUp } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const completedProjects = [
@@ -89,10 +89,10 @@ const inProgressProjects = [
 ];
 
 const metrics = [
-  { label: "Total Projects", value: "5" },
-  { label: "Completed", value: "3" },
-  { label: "In Progress", value: "2" },
-  { label: "Delivery Rate", value: "100%" },
+  { label: "Total Projects", value: "5", sub: "Gulf Province, PNG", icon: FolderOpen, color: "#dc2626" },
+  { label: "Completed", value: "3", sub: "Fully handed over", icon: CheckCircle, color: "#16a34a" },
+  { label: "In Progress", value: "2", sub: "Active construction", icon: Clock, color: "#d97706" },
+  { label: "Delivery Rate", value: "100%", sub: "On time, every time", icon: TrendingUp, color: "#dc2626" },
 ];
 
 export default function ProjectsPage() {
@@ -114,13 +114,27 @@ export default function ProjectsPage() {
           </div>
 
           {/* Metrics */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
-            {metrics.map((m) => (
-              <div key={m.label} className="bg-white/5 border border-white/10 rounded-xl p-5">
-                <p className="text-2xl font-black text-[#dc2626]">{m.value}</p>
-                <p className="text-white/40 text-xs font-mono mt-1 uppercase tracking-wider">{m.label}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+            {metrics.map((m) => {
+              const Icon = m.icon;
+              return (
+                <div key={m.label} className="relative bg-white/5 border border-white/10 rounded-xl p-5 overflow-hidden group hover:bg-white/8 transition-colors">
+                  {/* Accent top bar */}
+                  <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ backgroundColor: m.color }} />
+                  {/* Icon watermark */}
+                  <Icon className="absolute bottom-3 right-3 w-10 h-10 opacity-5" style={{ color: m.color }} />
+                  {/* Content */}
+                  <div className="flex items-center gap-1.5 mb-3">
+                    <div className="w-5 h-5 rounded flex items-center justify-center" style={{ backgroundColor: `${m.color}20` }}>
+                      <Icon className="w-3 h-3" style={{ color: m.color }} />
+                    </div>
+                    <span className="text-white/40 text-[10px] font-mono uppercase tracking-widest">{m.label}</span>
+                  </div>
+                  <p className="text-3xl font-black leading-none mb-1" style={{ color: m.color }}>{m.value}</p>
+                  <p className="text-white/30 text-[10px] font-mono">{m.sub}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
