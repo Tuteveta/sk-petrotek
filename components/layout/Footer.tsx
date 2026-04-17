@@ -24,7 +24,11 @@ const projects = [
   { label: "Kikori District School", href: "/projects" },
 ];
 
-const legalLinks = ["Privacy Policy", "Terms of Use", "IPA Registration"];
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Use", href: "/terms-of-use" },
+  { label: "IPA Registration", href: "#" },
+];
 
 export default function Footer() {
   return (
@@ -193,8 +197,8 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             {legalLinks.map((l, i) => (
-              <span key={l} className="flex items-center gap-4">
-                <span className="text-[10px] text-[#5a6374] hover:text-[#8e9aad] font-mono cursor-pointer transition-colors">{l}</span>
+              <span key={l.label} className="flex items-center gap-4">
+                <Link href={l.href} className="text-[10px] text-[#5a6374] hover:text-[#8e9aad] font-mono transition-colors">{l.label}</Link>
                 {i < legalLinks.length - 1 && <span className="text-[#1e293b] text-xs">·</span>}
               </span>
             ))}
