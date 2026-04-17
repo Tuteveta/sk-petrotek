@@ -18,7 +18,7 @@ const services = [
     description: "Scheduled preventive maintenance programs and emergency repair services. Our certified technicians ensure minimal downtime for your operations — day or night.",
     features: ["Scheduled Maintenance", "Emergency Repair 24/7", "Load Testing", "Corrosion Protection"],
     href: "/services",
-    accentColor: "#1D4ED8",
+    accentColor: "#dc2626",
   },
   {
     icon: School,
@@ -27,7 +27,7 @@ const services = [
     description: "Proud contractors for the Open Member for Kerema. SK Proteck has successfully completed three school construction projects in Eastern Gulf Province, PNG.",
     features: ["School Construction", "Infrastructure Build", "Gulf Province Focus", "Govt. Contracted"],
     href: "/projects",
-    accentColor: "#16a34a",
+    accentColor: "#dc2626",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function ServicesOverview() {
             return (
               <div
                 key={service.title}
-                className="group bg-white border border-gray-200 hover:border-gray-300 transition-colors overflow-hidden flex flex-col"
+                className="group bg-white border border-gray-200 rounded-xl hover:border-gray-300 transition-colors overflow-hidden flex flex-col"
                 style={{ borderTop: `3px solid ${service.accentColor}` }}
               >
                 <div className="p-6 lg:p-8 flex-1">
