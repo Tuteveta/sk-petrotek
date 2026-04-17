@@ -14,7 +14,6 @@ const services = [
   "Generator Cleaning",
   "Oil Services",
   "Maintenance & Repair",
-  "Power Consulting",
   "Community Projects",
 ];
 

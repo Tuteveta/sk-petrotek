@@ -1,4 +1,4 @@
-import { Filter, Droplets, Wrench, BarChart2, School, CheckCircle, ArrowRight } from "lucide-react";
+import { Filter, Droplets, Wrench, School, CheckCircle, ArrowRight } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const services = [
@@ -52,19 +52,6 @@ const services = [
       "Full load bank testing and commissioning",
       "Governor, AVR, and control panel repair",
       "Exhaust, cooling, and fuel system repair",
-    ],
-  },
-  {
-    icon: BarChart2,
-    title: "Power Consulting",
-    tag: "Advisory",
-    description: "Make informed decisions about your power infrastructure. SK Proteck's engineering team provides energy audits, capacity planning, and regulatory compliance guidance.",
-    features: [
-      "Site energy audit and assessment",
-      "Generator sizing and capacity planning",
-      "Fuel consumption optimization",
-      "PNG regulatory compliance review",
-      "Power system design recommendations",
     ],
   },
   {

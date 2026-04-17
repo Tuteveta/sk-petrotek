@@ -9,7 +9,6 @@ const serviceOptions = [
   "Generator Cleaning",
   "Oil Services",
   "Maintenance & Repair",
-  "Power Consulting",
   "Community / Construction Projects",
   "Other",
 ];
