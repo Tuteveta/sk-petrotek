@@ -28,144 +28,88 @@ export default function ProjectsChart() {
       const container = containerRef.current;
       const totalWidth = container.clientWidth || 600;
 
-      const margin = { top: 20, right: 80, bottom: 50, left: 220 };
+      const margin = { top: 16, right: 80, bottom: 40, left: 220 };
       const width = totalWidth - margin.left - margin.right;
-      const height = 220 - margin.top - margin.bottom;
+      const height = 200 - margin.top - margin.bottom;
 
-      // Clear previous
       d3.select(svgRef.current).selectAll("*").remove();
 
       const svg = d3
         .select(svgRef.current)
         .attr("width", totalWidth)
         .attr("height", height + margin.top + margin.bottom)
+        .style("background", "transparent")
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
-      // Scales
       const xScale = d3.scaleLinear().domain([0, 100]).range([0, width]);
-
-      const yScale = d3
-        .scaleBand()
+      const yScale = d3.scaleBand()
         .domain(projects.map((d) => d.name))
         .range([0, height])
-        .padding(0.35);
+        .padding(0.4);
 
-      // Background track bars
-      svg
-        .selectAll(".bar-bg")
-        .data(projects)
-        .enter()
-        .append("rect")
-        .attr("class", "bar-bg")
-        .attr("x", 0)
-        .attr("y", (d) => yScale(d.name) ?? 0)
-        .attr("width", width)
-        .attr("height", yScale.bandwidth())
-        .attr("rx", 6)
-        .attr("fill", "#f1f5f9");
+      // Grid lines
+      svg.selectAll(".grid-v")
+        .data([25, 50, 75, 100])
+        .enter().append("line")
+        .attr("x1", d => xScale(d)).attr("x2", d => xScale(d))
+        .attr("y1", 0).attr("y2", height)
+        .attr("stroke", "#2c3235").attr("stroke-width", 1).attr("stroke-dasharray", "3,3");
 
-      // Amber progress bars
-      svg
-        .selectAll(".bar")
-        .data(projects)
-        .enter()
-        .append("rect")
-        .attr("class", "bar")
-        .attr("x", 0)
-        .attr("y", (d) => yScale(d.name) ?? 0)
-        .attr("width", 0)
-        .attr("height", yScale.bandwidth())
-        .attr("rx", 6)
-        .attr("fill", "#f59e0b")
-        .transition()
-        .duration(1000)
-        .ease(d3.easeCubicOut)
+      // Track bars (background)
+      svg.selectAll(".bar-bg")
+        .data(projects).enter().append("rect")
+        .attr("x", 0).attr("y", (d) => yScale(d.name) ?? 0)
+        .attr("width", width).attr("height", yScale.bandwidth())
+        .attr("rx", 2).attr("fill", "#2c3235");
+
+      // Amber fill bars
+      svg.selectAll(".bar")
+        .data(projects).enter().append("rect")
+        .attr("x", 0).attr("y", (d) => yScale(d.name) ?? 0)
+        .attr("width", 0).attr("height", yScale.bandwidth())
+        .attr("rx", 2).attr("fill", "#f59e0b")
+        .transition().duration(1000).ease(d3.easeCubicOut)
         .attr("width", (d) => xScale(d.completion));
 
-      // Percentage labels at end of bar
-      svg
-        .selectAll(".label-pct")
-        .data(projects)
-        .enter()
-        .append("text")
-        .attr("class", "label-pct")
+      // Percentage label
+      svg.selectAll(".label-pct")
+        .data(projects).enter().append("text")
         .attr("x", (d) => xScale(d.completion) + 8)
         .attr("y", (d) => (yScale(d.name) ?? 0) + yScale.bandwidth() / 2)
         .attr("dy", "0.35em")
-        .attr("fill", "#1a1a2e")
-        .attr("font-size", "13px")
-        .attr("font-weight", "700")
+        .attr("fill", "#f59e0b").attr("font-size", "12px").attr("font-weight", "700").attr("font-family", "monospace")
         .text((d) => `${d.completion}%`);
 
-      // Year labels inside bar
-      svg
-        .selectAll(".label-year")
-        .data(projects)
-        .enter()
-        .append("text")
-        .attr("class", "label-year")
-        .attr("x", 10)
+      // Year label inside bar
+      svg.selectAll(".label-year")
+        .data(projects).enter().append("text")
+        .attr("x", 8)
         .attr("y", (d) => (yScale(d.name) ?? 0) + yScale.bandwidth() / 2)
         .attr("dy", "0.35em")
-        .attr("fill", "#1a1a2e")
-        .attr("font-size", "11px")
-        .attr("font-weight", "600")
+        .attr("fill", "#111217").attr("font-size", "10px").attr("font-weight", "600").attr("font-family", "monospace")
         .text((d) => d.year);
 
-      // Y-axis labels (project names)
-      svg
-        .selectAll(".y-label")
-        .data(projects)
-        .enter()
-        .append("text")
-        .attr("class", "y-label")
-        .attr("x", -10)
-        .attr("y", (d) => (yScale(d.name) ?? 0) + yScale.bandwidth() / 2)
-        .attr("dy", "0.35em")
-        .attr("text-anchor", "end")
-        .attr("fill", "#1a1a2e")
-        .attr("font-size", "13px")
-        .attr("font-weight", "600")
+      // Y-axis labels
+      svg.selectAll(".y-label")
+        .data(projects).enter().append("text")
+        .attr("x", -10).attr("y", (d) => (yScale(d.name) ?? 0) + yScale.bandwidth() / 2)
+        .attr("dy", "0.35em").attr("text-anchor", "end")
+        .attr("fill", "#8e9aad").attr("font-size", "12px").attr("font-weight", "500")
         .text((d) => d.name);
 
       // X-axis
-      const xAxis = d3
-        .axisBottom(xScale)
-        .ticks(5)
-        .tickFormat((d) => `${d}%`);
-
-      svg
-        .append("g")
+      svg.append("g")
         .attr("transform", `translate(0,${height})`)
-        .call(xAxis)
-        .call((g) => g.select(".domain").remove())
-        .call((g) =>
-          g.selectAll(".tick line").attr("stroke", "#e2e8f0").attr("y1", -height)
-        )
-        .call((g) =>
-          g
-            .selectAll(".tick text")
-            .attr("fill", "#64748b")
-            .attr("font-size", "11px")
-        );
-
-      // Title
-      svg
-        .append("text")
-        .attr("x", width / 2)
-        .attr("y", height + margin.bottom - 5)
-        .attr("text-anchor", "middle")
-        .attr("fill", "#94a3b8")
-        .attr("font-size", "11px")
-        .text("Project Completion (%)");
+        .call(d3.axisBottom(xScale).ticks(5).tickFormat((d) => `${d}%`))
+        .call((g) => g.select(".domain").attr("stroke", "#2c3235"))
+        .call((g) => g.selectAll(".tick line").attr("stroke", "#2c3235"))
+        .call((g) => g.selectAll(".tick text").attr("fill", "#5a6374").attr("font-size", "11px").attr("font-family", "monospace"));
     };
 
     drawChart();
-
     const observer = new ResizeObserver(() => drawChart());
     observer.observe(containerRef.current);
-
     return () => observer.disconnect();
   }, []);
 

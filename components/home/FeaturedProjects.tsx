@@ -1,103 +1,155 @@
+import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Calendar, Building2, ArrowRight } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { MapPin, Calendar, Building2, ArrowRight, CheckCircle } from "lucide-react";
 
 const projects = [
   {
+    id: "01",
     name: "Kerema Primary School",
-    location: "Eastern Gulf Province",
+    location: "Kerema, Eastern Gulf Province",
     year: "2024",
     scope: "8 Classrooms",
-    description:
-      "A fully equipped primary school providing modern educational facilities for the Kerema community, funded under the Open Member for Kerema initiative.",
-    tag: "Completed",
+    description: "A fully equipped primary school providing modern educational facilities for the Kerema community, funded under the Open Member for Kerema initiative. Delivered on schedule with ablution facilities, water supply, and electrical installation.",
+    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80&fit=crop",
+    href: "/projects",
   },
   {
+    id: "02",
     name: "Malalaua Community School",
-    location: "Eastern Gulf Province",
+    location: "Malalaua, Eastern Gulf Province",
     year: "2024",
     scope: "6 Classrooms + Library",
-    description:
-      "Built with an integrated library wing, this community school serves students from surrounding villages in the Malalaua district.",
-    tag: "Completed",
+    description: "Built with an integrated library wing — a first for Malalaua district. Solar lighting, local materials, and community consultation defined this landmark school that serves students from surrounding villages.",
+    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80&fit=crop",
+    href: "/projects",
   },
   {
+    id: "03",
     name: "Kikori District School",
-    location: "Eastern Gulf Province",
+    location: "Kikori, Eastern Gulf Province",
     year: "2025",
     scope: "10 Classrooms + Admin Block",
-    description:
-      "The largest of the three projects, featuring a full administrative block and ten modern classrooms designed for the Kikori district's growing student population.",
-    tag: "Completed",
+    description: "The largest project in SK Proteck's history. Ten modern classrooms and a full administrative block — generator-backed power, rainwater harvesting, and a facility that sets a new standard for rural education in PNG.",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&q=80&fit=crop",
+    href: "/projects",
   },
 ];
 
 export default function FeaturedProjects() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+    <section className="bg-[#f8fafc] border-b border-gray-200">
+
+      {/* Section header */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-14">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
           <div>
-            <span className="text-[#f59e0b] text-sm font-bold uppercase tracking-widest">Featured Work</span>
-            <h2 className="text-4xl font-black text-[#1a1a2e] mt-2 mb-3">
-              Schools That Changed a Province
+            <div className="flex items-center gap-3 mb-3">
+              <div className="h-px w-10 bg-[#16a34a]" />
+              <span className="text-[#16a34a] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
+                Featured Work
+              </span>
+            </div>
+            <h2 className="text-5xl lg:text-6xl font-black text-[#1a1a2a] tracking-tight">
+              Schools That Changed<br />
+              <span className="text-[#f59e0b]">a Province</span><span className="text-[#f59e0b]">.</span>
             </h2>
-            <p className="text-gray-600 text-lg max-w-xl">
-              Contracted by the Open Member for Kerema, SK Proteck successfully delivered three school projects in Eastern Gulf Province, PNG.
+            <p className="text-gray-500 text-base font-mono mt-3">
+              Contracted by the Open Member for Kerema — Eastern Gulf Province, PNG
             </p>
           </div>
           <Link href="/projects" className="shrink-0">
-            <Button variant="dark" size="lg" className="group">
-              View All Projects
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <button className="group inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-gray-400 hover:text-[#16a34a] transition-colors">
+              View all projects
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            </button>
           </Link>
         </div>
+      </div>
 
-        {/* Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projects.map((project, i) => (
+      {/* Alternating project rows */}
+      {projects.map((project, i) => (
+        <div
+          key={project.id}
+          className="border-t border-gray-200 grid grid-cols-1 lg:grid-cols-2 min-h-[480px]"
+        >
+          {/* Image column */}
+          <div className={`relative overflow-hidden h-[300px] lg:h-auto ${i % 2 === 1 ? "lg:order-2" : ""}`}>
+            <Image
+              src={project.image}
+              alt={project.name}
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-black/20" />
+
+            {/* Status chip over image */}
+            <div className="absolute bottom-5 left-5 bg-[#111217]/85 backdrop-blur-sm border border-white/10 px-4 py-3">
+              <div className="flex items-center gap-2 mb-1">
+                <CheckCircle className="w-3 h-3 text-[#73bf69]" />
+                <span className="text-[#73bf69] text-[10px] font-mono uppercase tracking-wider">Status: Completed</span>
+              </div>
+              <span className="text-[#f59e0b] text-[10px] font-mono">Year: {project.year}</span>
+            </div>
+          </div>
+
+          {/* Text column */}
+          <div className={`relative bg-white border-l border-gray-200 p-10 lg:p-14 flex flex-col justify-center ${i % 2 === 1 ? "lg:border-l-0 lg:border-r border-r-gray-200" : ""}`}>
+            {/* Ghost number */}
             <div
-              key={project.name}
-              className="group relative bg-[#1a1a2e] rounded-2xl overflow-hidden border border-white/10"
+              className="absolute right-8 top-6 text-gray-100 font-black leading-none select-none pointer-events-none"
+              style={{ fontSize: "clamp(80px, 10vw, 140px)" }}
+              aria-hidden
             >
-              {/* Number accent */}
-              <div className="absolute top-4 right-4 text-7xl font-black text-white/5 select-none leading-none">
-                {String(i + 1).padStart(2, "0")}
+              {project.id}
+            </div>
+
+            <div className="relative z-10">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="h-px w-5 bg-[#16a34a]" />
+                <span className="text-[#16a34a] text-[10px] font-mono uppercase tracking-[0.2em]">Community Project</span>
               </div>
 
-              {/* Top amber stripe */}
-              <div className="h-1.5 bg-[#f59e0b]" />
+              <h3 className="text-3xl lg:text-4xl font-black text-[#1a1a2a] tracking-tight leading-tight mb-6">
+                {project.name}
+              </h3>
 
-              <div className="p-6 pt-5">
-                <Badge variant="default" className="mb-4 text-xs">
-                  {project.tag}
-                </Badge>
-
-                <h3 className="text-xl font-bold text-white mb-3">{project.name}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-5">{project.description}</p>
-
-                <div className="space-y-2.5">
-                  <div className="flex items-center gap-2 text-xs text-gray-400">
-                    <MapPin className="w-3.5 h-3.5 text-[#f59e0b]" />
-                    {project.location}
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-gray-400">
-                    <Calendar className="w-3.5 h-3.5 text-[#f59e0b]" />
-                    Completed {project.year}
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-gray-400">
-                    <Building2 className="w-3.5 h-3.5 text-[#f59e0b]" />
-                    {project.scope}
-                  </div>
+              {/* Meta strip */}
+              <div className="flex flex-wrap gap-6 mb-6">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-[#f59e0b]" />
+                  <span className="text-sm text-gray-600">{project.location}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-[#f59e0b]" />
+                  <span className="text-sm text-gray-600">Completed {project.year}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Building2 className="w-4 h-4 text-[#f59e0b]" />
+                  <span className="text-sm text-gray-600">{project.scope}</span>
                 </div>
               </div>
+
+              <p className="text-gray-500 text-base leading-relaxed max-w-md mb-8">
+                {project.description}
+              </p>
+
+              {/* Status chip */}
+              <div className="flex items-center gap-2 bg-[#16a34a]/10 border border-[#16a34a]/30 w-fit px-4 py-2 mb-8">
+                <CheckCircle className="w-3.5 h-3.5 text-[#16a34a]" />
+                <span className="text-xs font-mono text-[#16a34a] uppercase tracking-wider">Project Complete</span>
+              </div>
+
+              <Link href={project.href}>
+                <button className="group inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wider text-gray-400 hover:text-[#f59e0b] transition-colors">
+                  View project details
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </Link>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 }

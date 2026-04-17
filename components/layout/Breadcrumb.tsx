@@ -12,26 +12,20 @@ interface BreadcrumbProps {
 
 export default function Breadcrumb({ crumbs }: BreadcrumbProps) {
   return (
-    <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 mb-6">
-      <Link
-        href="/"
-        className="flex items-center gap-1 text-gray-400 hover:text-[#f59e0b] transition-colors text-sm"
-      >
-        <Home size={13} />
+    <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 mb-5">
+      <Link href="/" className="flex items-center gap-1 text-[#5a6374] hover:text-[#f59e0b] transition-colors text-xs font-mono">
+        <Home size={11} />
         <span>Home</span>
       </Link>
       {crumbs.map((crumb, i) => (
         <span key={i} className="flex items-center gap-1.5">
-          <ChevronRight size={13} className="text-gray-600" />
+          <ChevronRight size={11} className="text-[#3d4450]" />
           {crumb.href ? (
-            <Link
-              href={crumb.href}
-              className="text-sm text-gray-400 hover:text-[#f59e0b] transition-colors"
-            >
+            <Link href={crumb.href} className="text-xs font-mono text-[#5a6374] hover:text-[#f59e0b] transition-colors">
               {crumb.label}
             </Link>
           ) : (
-            <span className="text-sm text-[#f59e0b] font-medium">{crumb.label}</span>
+            <span className="text-xs font-mono text-[#f59e0b]">{crumb.label}</span>
           )}
         </span>
       ))}

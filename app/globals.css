@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #1a1a2e;
-  --color-primary-light: #16213e;
+  /* Grafana-inspired enterprise dark palette */
+  --color-bg: #111217;
+  --color-surface: #181b1f;
+  --color-panel: #1f2329;
+  --color-border: #2c3235;
+  --color-primary: #111217;
+  --color-primary-light: #181b1f;
   --color-accent: #f59e0b;
   --color-accent-dark: #d97706;
-  --color-surface: #f8fafc;
+  --color-text: #d0d0d0;
+  --color-text-muted: #8e9aad;
+  --color-text-faint: #5a6374;
+  --color-green: #73bf69;
+  --color-blue: #5794f2;
+  --color-red: #f2495c;
   --font-sans: var(--font-roboto), Roboto, system-ui, sans-serif;
 }
 
@@ -27,6 +37,78 @@ p, span, a, li, button, input, textarea, select {
 }
 
 body {
-  background-color: var(--color-surface);
-  color: #1f2937;
+  background-color: #ffffff;
+  color: #1a1a2a;
+}
+
+/* Grafana panel base */
+.gf-panel {
+  background: #1f2329;
+  border: 1px solid #2c3235;
+  border-radius: 4px;
+}
+
+.gf-panel-header {
+  border-bottom: 1px solid #2c3235;
+  padding: 12px 16px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #111217; }
+::-webkit-scrollbar-thumb { background: #2c3235; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3d4450; }
+
+/* Ticker animation */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+/* Hero fade-up entrance */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-fade-up-delay {
+  opacity: 0;
+  animation: fade-up 0.8s ease-out 0.2s forwards;
+}
+
+.animate-fade-up-delay-2 {
+  opacity: 0;
+  animation: fade-up 0.8s ease-out 0.4s forwards;
+}
+
+/* Scroll indicator */
+@keyframes scroll-dot {
+  0%, 100% { top: 0; opacity: 1; }
+  80% { opacity: 0.3; }
+  100% { top: calc(100% - 6px); }
+}
+
+/* Ghost/outlined text treatment for hero watermark */
+.text-stroke-amber {
+  -webkit-text-stroke: 1px #f59e0b;
+  color: transparent;
+}
+
+/* Highlight card isolation */
+.highlight-card {
+  isolation: isolate;
 }

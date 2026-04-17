@@ -1,78 +1,109 @@
 import Link from "next/link";
 import { Settings, Wrench, School, ArrowRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const services = [
   {
     icon: Settings,
+    tag: "Core Service",
     title: "Generator Services",
-    description:
-      "Comprehensive generator filtering, cleaning, and oil services to keep your power systems running at peak efficiency. We handle all brands and capacities.",
+    description: "Comprehensive generator filtering, cleaning, and oil services to keep your power systems running at peak efficiency. We handle all brands and capacities across Papua New Guinea.",
     features: ["Filter Replacement", "Fuel Filtration", "Oil Analysis & Change", "Lubrication Management"],
     href: "/services",
+    accentColor: "#f59e0b",
   },
   {
     icon: Wrench,
+    tag: "24/7 Available",
     title: "Maintenance & Repair",
-    description:
-      "Scheduled preventive maintenance programs and emergency repair services. Our certified technicians ensure minimal downtime for your operations.",
+    description: "Scheduled preventive maintenance programs and emergency repair services. Our certified technicians ensure minimal downtime for your operations — day or night.",
     features: ["Scheduled Maintenance", "Emergency Repair 24/7", "Load Testing", "Corrosion Protection"],
     href: "/services",
+    accentColor: "#1D4ED8",
   },
   {
     icon: School,
+    tag: "Govt. Contracted",
     title: "Community Projects",
-    description:
-      "Proud contractors for the Open Member for Kerema, SK Proteck has successfully completed three school construction projects in Eastern Gulf Province.",
+    description: "Proud contractors for the Open Member for Kerema. SK Proteck has successfully completed three school construction projects in Eastern Gulf Province, PNG.",
     features: ["School Construction", "Infrastructure Build", "Gulf Province Focus", "Govt. Contracted"],
     href: "/projects",
+    accentColor: "#16a34a",
   },
 ];
 
 export default function ServicesOverview() {
   return (
-    <section className="bg-[#f8fafc] py-20">
+    <section className="bg-[#f8fafc] py-24 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Header */}
-        <div className="text-center mb-14">
-          <span className="text-[#f59e0b] text-sm font-bold uppercase tracking-widest">What We Do</span>
-          <h2 className="text-4xl font-black text-[#1a1a2e] mt-2 mb-4">
-            End-to-End Power Solutions
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            From generator servicing to community infrastructure, SK Proteck delivers reliable, professional results across Papua New Guinea.
-          </p>
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+          <div>
+            <div className="flex items-center gap-3 mb-3">
+              <div className="h-px w-10 bg-[#f59e0b]" />
+              <span className="text-[#f59e0b] text-xs font-mono font-semibold uppercase tracking-[0.2em]">
+                Service Catalogue
+              </span>
+            </div>
+            <h2 className="text-5xl lg:text-6xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
+              End-to-End Power<br />
+              <span className="text-[#f59e0b]">Solutions</span>
+            </h2>
+            <p className="text-gray-500 text-lg leading-relaxed max-w-lg mt-4">
+              From generator servicing to community infrastructure, SK Proteck delivers reliable, professional results across Papua New Guinea.
+            </p>
+          </div>
+          <Link href="/services" className="shrink-0">
+            <button className="group inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wider text-gray-500 hover:text-[#f59e0b] transition-colors">
+              View full catalogue
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </Link>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Card key={service.title} className="group hover:shadow-xl transition-shadow duration-300 border-t-4 border-t-[#f59e0b] overflow-hidden">
-                <CardContent className="pt-6 pb-8 px-6">
-                  <div className="w-12 h-12 bg-[#1a1a2e] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#f59e0b] transition-colors">
-                    <Icon className="w-6 h-6 text-[#f59e0b] group-hover:text-[#1a1a2e] transition-colors" />
+              <div
+                key={service.title}
+                className="group bg-white border border-gray-200 hover:border-gray-300 transition-colors overflow-hidden flex flex-col"
+                style={{ borderTop: `3px solid ${service.accentColor}` }}
+              >
+                <div className="p-8 lg:p-10 flex-1">
+                  <div
+                    className="w-14 h-14 flex items-center justify-center mb-7 border-2 transition-colors"
+                    style={{ backgroundColor: `${service.accentColor}12`, borderColor: `${service.accentColor}40` }}
+                  >
+                    <Icon className="w-7 h-7" style={{ color: service.accentColor }} />
                   </div>
-                  <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">{service.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-5">{service.description}</p>
-                  <ul className="space-y-2 mb-6">
+
+                  <h3 className="text-2xl font-bold text-[#1a1a2a] mb-3">{service.title}</h3>
+                  <p className="text-gray-500 text-base leading-relaxed mb-6">{service.description}</p>
+
+                  <ul className="space-y-3">
                     {service.features.map((f) => (
-                      <li key={f} className="flex items-center gap-2 text-sm text-gray-700">
-                        <span className="w-1.5 h-1.5 bg-[#f59e0b] rounded-full shrink-0" />
+                      <li key={f} className="flex items-center gap-3 text-base text-gray-600">
+                        <div className="w-4 h-px shrink-0" style={{ backgroundColor: service.accentColor }} />
                         {f}
                       </li>
                     ))}
                   </ul>
+                </div>
+
+                <div className="border-t border-gray-100 px-8 lg:px-10 py-5 flex items-center justify-between">
                   <Link href={service.href}>
-                    <Button variant="outline" size="sm" className="group/btn">
-                      Learn More
-                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
+                    <button className="group/btn flex items-center gap-2 text-sm font-mono uppercase tracking-wider transition-colors hover:opacity-80" style={{ color: service.accentColor }}>
+                      Learn more
+                      <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
                   </Link>
-                </CardContent>
-              </Card>
+                  <span className="text-xs font-mono px-2 py-1 border rounded-sm" style={{ color: service.accentColor, borderColor: `${service.accentColor}40`, backgroundColor: `${service.accentColor}08` }}>
+                    {service.tag}
+                  </span>
+                </div>
+              </div>
             );
           })}
         </div>
