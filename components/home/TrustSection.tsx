@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ShieldCheck, Clock, Users, ThumbsUp, ArrowRight, Quote } from "lucide-react";
+import { ShieldCheck, Clock, Users, ThumbsUp, Quote } from "lucide-react";
 
 const trustPoints = [
   {
@@ -117,36 +116,6 @@ export default function TrustSection() {
         </div>
       </div>
 
-      {/* CTA */}
-      <div className="bg-[#1a1a1a]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="h-px w-8 bg-[#dc2626]" />
-              <span className="text-[#dc2626] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Get Started</span>
-            </div>
-            <h3 className="text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight">
-              Ready to Power Your Business?
-            </h3>
-            <p className="text-white/50 text-sm leading-relaxed mt-3">
-              Contact SK Proteck today for a free consultation on generator services, maintenance contracts, or project partnerships.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-            <Link href="/contact">
-              <button className="group inline-flex items-center gap-3 h-12 px-8 bg-[#dc2626] text-white text-sm font-black uppercase tracking-[0.15em] hover:bg-[#b91c1c] transition-colors">
-                Get a Free Quote
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
-              </button>
-            </Link>
-            <Link href="/services">
-              <button className="inline-flex items-center gap-3 h-12 px-8 border border-white/20 text-white/70 text-sm font-semibold uppercase tracking-[0.15em] hover:border-white hover:text-white transition-colors">
-                Our Services
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
