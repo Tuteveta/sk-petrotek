@@ -44,16 +44,14 @@ export default function FeaturedProjects() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <div className="h-px w-10 bg-[#16a34a]" />
               <span className="text-[#16a34a] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
                 Featured Work
               </span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-[#1a1a2a] tracking-tight">
-              Schools That Changed<br />
-              <span className="text-[#f59e0b]">a Province</span><span className="text-[#f59e0b]">.</span>
+            <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight">
+              Schools That Changed <span className="text-[#f59e0b]">a Province.</span>
             </h2>
-            <p className="text-gray-500 text-base font-mono mt-3">
+            <p className="text-gray-500 text-sm font-mono mt-2">
               Contracted by the Open Member for Kerema — Eastern Gulf Province, PNG
             </p>
           </div>
@@ -110,7 +108,7 @@ export default function FeaturedProjects() {
                 <span className="text-[#16a34a] text-[10px] font-mono uppercase tracking-[0.2em]">Community Project</span>
               </div>
 
-              <h3 className="text-3xl lg:text-4xl font-black text-[#1a1a2a] tracking-tight leading-tight mb-6">
+              <h3 className="text-lg lg:text-xl font-black text-[#1a1a2a] tracking-tight leading-tight mb-4">
                 {project.name}
               </h3>
 

@@ -44,10 +44,10 @@ export default function ServicesOverview() {
                 Service Catalogue
               </span>
             </div>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
+            <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
               End-to-End Power <span className="text-[#f59e0b]">Solutions</span>
             </h2>
-            <p className="text-gray-500 text-lg leading-relaxed max-w-lg mt-4">
+            <p className="text-gray-500 text-sm leading-relaxed max-w-lg mt-3">
               From generator servicing to community infrastructure, SK Proteck delivers reliable, professional results across Papua New Guinea.
             </p>
           </div>
@@ -69,21 +69,21 @@ export default function ServicesOverview() {
                 className="group bg-white border border-gray-200 hover:border-gray-300 transition-colors overflow-hidden flex flex-col"
                 style={{ borderTop: `3px solid ${service.accentColor}` }}
               >
-                <div className="p-8 lg:p-10 flex-1">
+                <div className="p-6 lg:p-8 flex-1">
                   <div
-                    className="w-14 h-14 flex items-center justify-center mb-7 border-2 transition-colors"
+                    className="w-10 h-10 flex items-center justify-center mb-5 border-2 transition-colors"
                     style={{ backgroundColor: `${service.accentColor}12`, borderColor: `${service.accentColor}40` }}
                   >
-                    <Icon className="w-7 h-7" style={{ color: service.accentColor }} />
+                    <Icon className="w-5 h-5" style={{ color: service.accentColor }} />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-[#1a1a2a] mb-3">{service.title}</h3>
-                  <p className="text-gray-500 text-base leading-relaxed mb-6">{service.description}</p>
+                  <h3 className="text-base font-bold text-[#1a1a2a] mb-2">{service.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed mb-4">{service.description}</p>
 
-                  <ul className="space-y-3">
+                  <ul className="space-y-2">
                     {service.features.map((f) => (
-                      <li key={f} className="flex items-center gap-3 text-base text-gray-600">
-                        <div className="w-4 h-px shrink-0" style={{ backgroundColor: service.accentColor }} />
+                      <li key={f} className="flex items-center gap-2.5 text-sm text-gray-600">
+                        <div className="w-3 h-px shrink-0" style={{ backgroundColor: service.accentColor }} />
                         {f}
                       </li>
                     ))}

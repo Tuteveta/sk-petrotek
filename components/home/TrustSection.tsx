@@ -53,10 +53,9 @@ export default function TrustSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="mb-14">
           <div className="flex items-center gap-3 mb-3">
-            <div className="h-px w-10 bg-[#1D4ED8]" />
             <span className="text-[#1D4ED8] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Proteck</span>
           </div>
-          <h2 className="text-5xl lg:text-6xl font-black text-[#1a1a2a] tracking-tight">
+          <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight">
             Built on Trust &amp; <span className="text-[#f59e0b]">Results</span>
           </h2>
         </div>
@@ -76,8 +75,8 @@ export default function TrustSection() {
                 >
                   <Icon className="w-5 h-5" style={{ color: point.color }} />
                 </div>
-                <h3 className="text-lg font-bold text-[#1a1a2a] mb-3">{point.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{point.desc}</p>
+                <h3 className="text-sm font-bold text-[#1a1a2a] mb-2">{point.title}</h3>
+                <p className="text-xs text-gray-500 leading-relaxed">{point.desc}</p>
               </div>
             );
           })}
@@ -124,10 +123,10 @@ export default function TrustSection() {
               <div className="h-px w-8 bg-[#111217]/40" />
               <span className="text-[#111217]/60 text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Get Started</span>
             </div>
-            <h3 className="text-4xl lg:text-5xl font-black text-[#111217] tracking-tight leading-tight">
-              Ready to Power<br />Your Business?
+            <h3 className="text-2xl lg:text-3xl font-black text-[#111217] tracking-tight leading-tight">
+              Ready to Power Your Business?
             </h3>
-            <p className="text-[#111217]/70 text-lg leading-relaxed mt-5">
+            <p className="text-[#111217]/70 text-sm leading-relaxed mt-3">
               Contact SK Proteck today for a free consultation on generator services, maintenance contracts, or project partnerships.
             </p>
           </div>

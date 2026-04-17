@@ -44,12 +44,11 @@ export default function NewsSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <div className="h-px w-10 bg-[#1D4ED8]" />
               <span className="text-[#1D4ED8] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
                 Latest Updates
               </span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-[#1a1a2a] tracking-tight">
+            <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight">
               News &amp; <span className="text-[#f59e0b]">Announcements</span>
             </h2>
           </div>
