@@ -114,24 +114,19 @@ export default function ProjectsPage() {
           </div>
 
           {/* Metrics */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+          <div className="mt-10 border border-white/10 rounded-xl overflow-hidden grid grid-cols-2 sm:grid-cols-4 divide-x divide-y sm:divide-y-0 divide-white/10">
             {metrics.map((m) => {
               const Icon = m.icon;
               return (
-                <div key={m.label} className="relative bg-white/5 border border-white/10 rounded-xl p-5 overflow-hidden group hover:bg-white/8 transition-colors">
-                  {/* Accent top bar */}
-                  <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ backgroundColor: m.color }} />
-                  {/* Icon watermark */}
-                  <Icon className="absolute bottom-3 right-3 w-10 h-10 opacity-5" style={{ color: m.color }} />
-                  {/* Content */}
-                  <div className="flex items-center gap-1.5 mb-3">
-                    <div className="w-5 h-5 rounded flex items-center justify-center" style={{ backgroundColor: `${m.color}20` }}>
-                      <Icon className="w-3 h-3" style={{ color: m.color }} />
-                    </div>
-                    <span className="text-white/40 text-[10px] font-mono uppercase tracking-widest">{m.label}</span>
+                <div key={m.label} className="flex items-center gap-4 px-6 py-5">
+                  <div className="w-10 h-10 rounded-lg shrink-0 flex items-center justify-center" style={{ backgroundColor: `${m.color}18`, border: `1px solid ${m.color}30` }}>
+                    <Icon className="w-4.5 h-4.5" style={{ color: m.color }} />
                   </div>
-                  <p className="text-3xl font-black leading-none mb-1" style={{ color: m.color }}>{m.value}</p>
-                  <p className="text-white/30 text-[10px] font-mono">{m.sub}</p>
+                  <div>
+                    <p className="text-2xl font-black leading-none" style={{ color: m.color }}>{m.value}</p>
+                    <p className="text-white/50 text-[10px] font-mono uppercase tracking-widest mt-1">{m.label}</p>
+                    <p className="text-white/25 text-[10px] font-mono mt-0.5">{m.sub}</p>
+                  </div>
                 </div>
               );
             })}
