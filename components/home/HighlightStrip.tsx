@@ -6,7 +6,7 @@ const cards = [
   {
     label: "Who We Are",
     title: "PNG's Industrial Power Partner",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45249be09?w=1200&q=80&fit=crop",
+    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1200&q=80&fit=crop",
     href: "/about",
   },
   {
