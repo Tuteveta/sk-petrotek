@@ -28,7 +28,7 @@ const legalLinks = ["Privacy Policy", "Terms of Use", "IPA Registration"];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] border-t border-[#333333]">
+    <footer className="bg-[#1a1a1a]">
 
       {/* Pre-footer CTA band */}
       <div className="border-b border-gray-200 bg-white">
