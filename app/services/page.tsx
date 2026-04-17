@@ -120,7 +120,6 @@ export default function ServicesPage() {
                 <div
                   key={service.title}
                   className="group bg-white border border-gray-200 rounded-xl hover:border-[#dc2626]/30 hover:shadow-sm transition-all overflow-hidden"
-                  style={{ borderTop: "3px solid #dc2626" }}
                 >
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-4">

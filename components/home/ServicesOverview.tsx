@@ -67,7 +67,6 @@ export default function ServicesOverview() {
               <div
                 key={service.title}
                 className="group bg-white border border-gray-200 rounded-xl hover:border-gray-300 transition-colors overflow-hidden flex flex-col"
-                style={{ borderTop: `3px solid ${service.accentColor}` }}
               >
                 <div className="p-6 lg:p-8 flex-1">
                   <div
