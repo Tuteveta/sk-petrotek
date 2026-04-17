@@ -31,7 +31,7 @@ export default function HighlightStrip() {
           key={card.label}
           href={card.href}
           className={`highlight-card relative overflow-hidden group flex flex-col justify-end ${
-            i < cards.length - 1 ? "border-r border-[#2c3235]/60" : ""
+            i < cards.length - 1 ? "border-r border-white/10" : ""
           }`}
         >
           {/* Background image */}

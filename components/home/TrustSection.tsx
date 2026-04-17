@@ -12,13 +12,13 @@ const trustPoints = [
     icon: Clock,
     title: "24/7 Emergency Support",
     desc: "Power failures don't keep business hours. Our rapid response team is available around the clock.",
-    color: "#1D4ED8",
+    color: "#f59e0b",
   },
   {
     icon: Users,
     title: "Government Trusted",
     desc: "Selected by the Open Member for Kerema for critical school construction in Gulf Province.",
-    color: "#16a34a",
+    color: "#f59e0b",
   },
   {
     icon: ThumbsUp,
@@ -34,14 +34,14 @@ const testimonials = [
     author: "Office of the Open Member for Kerema",
     role: "Gulf Province, Papua New Guinea",
     tag: "Construction Client",
-    tagColor: "#16a34a",
+    tagColor: "#f59e0b",
   },
   {
     quote: "Our generator maintenance contract with SK Proteck has reduced downtime by over 80%. They are genuinely reliable.",
     author: "Industrial Client",
     role: "Port Moresby Operations",
     tag: "Maintenance Client",
-    tagColor: "#1D4ED8",
+    tagColor: "#f59e0b",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function TrustSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="mb-14">
           <div className="flex items-center gap-3 mb-3">
-            <span className="text-[#1D4ED8] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Proteck</span>
+            <span className="text-[#f59e0b] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">Why SK Proteck</span>
           </div>
           <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight">
             Built on Trust &amp; <span className="text-[#f59e0b]">Results</span>

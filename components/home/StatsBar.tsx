@@ -21,12 +21,12 @@ export default function StatsBar() {
             By The Numbers<span className="text-[#f59e0b]">.</span>
           </h2>
         </div>
-        <span className="text-[#5a6374] text-xs font-mono shrink-0 hidden sm:block">FY 2026 · Updated Quarterly</span>
+        <span className="text-gray-400 text-xs font-mono shrink-0 hidden sm:block">FY 2026 · Updated Quarterly</span>
       </div>
 
       {/* Stats grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-[#2c3235]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-gray-200">
           {stats.map((stat) => {
             const Icon = stat.icon;
             return (
@@ -44,8 +44,8 @@ export default function StatsBar() {
                   </div>
                 </div>
                 <p className="text-2xl lg:text-3xl font-black text-[#1a1a2a] leading-none tabular-nums mb-1.5">{stat.value}</p>
-                <p className="text-xs font-semibold text-[#8e9aad] mb-0.5">{stat.label}</p>
-                <p className="text-[11px] text-[#5a6374] font-mono">{stat.desc}</p>
+                <p className="text-xs font-semibold text-gray-400 mb-0.5">{stat.label}</p>
+                <p className="text-[11px] text-gray-400 font-mono">{stat.desc}</p>
               </div>
             );
           })}

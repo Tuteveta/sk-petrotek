@@ -44,7 +44,7 @@ export default function NewsSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-[#1D4ED8] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
+              <span className="text-[#f59e0b] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
                 Latest Updates
               </span>
             </div>

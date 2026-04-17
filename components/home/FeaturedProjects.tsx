@@ -20,7 +20,7 @@ const projects = [
     year: "2024",
     scope: "6 Classrooms + Library",
     description: "Built with an integrated library wing — a first for Malalaua district. Solar lighting, local materials, and community consultation defined this landmark school that serves students from surrounding villages.",
-    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80&fit=crop",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80&fit=crop",
     href: "/projects",
   },
   {
@@ -44,7 +44,7 @@ export default function FeaturedProjects() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-[#16a34a] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
+              <span className="text-[#f59e0b] text-[11px] font-mono font-semibold uppercase tracking-[0.2em]">
                 Featured Work
               </span>
             </div>
@@ -56,7 +56,7 @@ export default function FeaturedProjects() {
             </p>
           </div>
           <Link href="/projects" className="shrink-0">
-            <button className="group inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-gray-400 hover:text-[#16a34a] transition-colors">
+            <button className="group inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-gray-400 hover:text-[#f59e0b] transition-colors">
               View all projects
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -104,8 +104,8 @@ export default function FeaturedProjects() {
 
             <div className="relative z-10">
               <div className="flex items-center gap-2 mb-4">
-                <div className="h-px w-5 bg-[#16a34a]" />
-                <span className="text-[#16a34a] text-[10px] font-mono uppercase tracking-[0.2em]">Community Project</span>
+                <div className="h-px w-5 bg-[#f59e0b]" />
+                <span className="text-[#f59e0b] text-[10px] font-mono uppercase tracking-[0.2em]">Community Project</span>
               </div>
 
               <h3 className="text-lg lg:text-xl font-black text-[#1a1a2a] tracking-tight leading-tight mb-4">
@@ -133,9 +133,9 @@ export default function FeaturedProjects() {
               </p>
 
               {/* Status chip */}
-              <div className="flex items-center gap-2 bg-[#16a34a]/10 border border-[#16a34a]/30 w-fit px-4 py-2 mb-8">
-                <CheckCircle className="w-3.5 h-3.5 text-[#16a34a]" />
-                <span className="text-xs font-mono text-[#16a34a] uppercase tracking-wider">Project Complete</span>
+              <div className="flex items-center gap-2 bg-[#f59e0b]/10 border border-[#f59e0b]/30 w-fit px-4 py-2 mb-8">
+                <CheckCircle className="w-3.5 h-3.5 text-[#f59e0b]" />
+                <span className="text-xs font-mono text-[#f59e0b] uppercase tracking-wider">Project Complete</span>
               </div>
 
               <Link href={project.href}>
