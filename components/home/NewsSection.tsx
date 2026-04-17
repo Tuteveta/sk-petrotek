@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react";
 const featured = {
   category: "Featured Update",
   date: "December 2025",
-  title: "SK Proteck Completes Kikori District School: Largest Infrastructure Project in Company History",
-  excerpt: "The 10-classroom Kikori District School, complete with a full administrative block, stands as the largest community infrastructure project delivered by SK Proteck. The facility sets a new benchmark for rural education in Gulf Province.",
+  title: "SK Proteck Completes Three Schools in Gulf Province with Two More Underway",
+  excerpt: "SK Proteck has successfully completed the Kukipi, Miaru, and Savaiviri Primary Schools, with construction actively progressing on Kukia and Putei Primary Schools. The projects set a new benchmark for rural education infrastructure in Papua New Guinea.",
   image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&q=80&fit=crop",
   href: "/projects",
 };

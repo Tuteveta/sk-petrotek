@@ -1,18 +1,18 @@
-import { MapPin, Calendar, Building2, CheckCircle, Users, Award } from "lucide-react";
+import { MapPin, Calendar, Building2, CheckCircle, Clock, Users, Award } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
-const projects = [
+const completedProjects = [
   {
     id: "01",
-    name: "Kerema Primary School",
-    location: "Kerema, Eastern Gulf Province",
+    name: "Kukipi Primary School",
+    location: "Gulf Province, PNG",
     year: "2024",
-    scope: "8 Classrooms",
+    scope: "Primary School Facility",
     status: "Completed",
     contract: "Open Member for Kerema",
-    description: "Delivered a fully equipped 8-classroom primary school facility for the Kerema community. The project included classroom blocks, ablution facilities, a water supply system, and paved access pathways. Construction was completed within schedule under the Open Member for Kerema's education development initiative.",
+    description: "Successfully delivered a fully equipped primary school facility for the Kukipi community. The project included classroom blocks, ablution facilities, a water supply system, and paved access pathways — completed within schedule under the Open Member for Kerema's education development initiative.",
     highlights: [
-      "8 fully furnished classrooms",
+      "Fully furnished classrooms",
       "Ablution blocks and water supply",
       "External paving and pathways",
       "Electrical installation throughout",
@@ -21,16 +21,16 @@ const projects = [
   },
   {
     id: "02",
-    name: "Malalaua Community School",
-    location: "Malalaua, Eastern Gulf Province",
+    name: "Miaru Primary School",
+    location: "Gulf Province, PNG",
     year: "2024",
-    scope: "6 Classrooms + Library",
+    scope: "Primary School Facility",
     status: "Completed",
     contract: "Open Member for Kerema",
-    description: "A community school featuring six modern classrooms and an integrated library wing — a first for the Malalaua district. The library provides a dedicated study and reading space, greatly enhancing educational outcomes. SK Proteck collaborated closely with local community leaders throughout the build.",
+    description: "Delivered a modern primary school facility for the Miaru community, providing students with quality learning infrastructure. SK Proteck collaborated closely with local community leaders throughout the build to ensure the facility met the needs of the district.",
     highlights: [
-      "6 modern classroom blocks",
-      "Dedicated library wing",
+      "Modern classroom blocks",
+      "Dedicated library space",
       "Community consultation process",
       "Solar lighting integration",
       "Local materials and labour sourced",
@@ -38,27 +38,60 @@ const projects = [
   },
   {
     id: "03",
-    name: "Kikori District School",
-    location: "Kikori, Eastern Gulf Province",
+    name: "Savaiviri Primary School",
+    location: "Gulf Province, PNG",
     year: "2025",
-    scope: "10 Classrooms + Admin Block",
+    scope: "Primary School Facility",
     status: "Completed",
     contract: "Open Member for Kerema",
-    description: "The largest of the three projects, the Kikori District School features ten classrooms and a full administrative block. Designed to serve the growing student population of the Kikori district, this facility sets a new benchmark for rural education infrastructure in Gulf Province.",
+    description: "Completed the Savaiviri Primary School facility, setting a new benchmark for rural education infrastructure in Gulf Province. The facility is designed to serve the growing student population and supports the district's long-term education goals.",
     highlights: [
-      "10 large classroom blocks",
-      "Full administration block",
-      "Staff offices and meeting rooms",
+      "Full classroom blocks",
+      "Administration and staff facilities",
       "Generator-backed power system",
       "Rainwater harvesting system",
+      "Fully handed over to community",
+    ],
+  },
+];
+
+const inProgressProjects = [
+  {
+    id: "04",
+    name: "Kukia Primary School",
+    location: "Gulf Province, PNG",
+    scope: "Primary School Facility",
+    status: "In Progress",
+    contract: "Open Member for Kerema",
+    description: "Currently under active construction, the Kukia Primary School will provide the Kukia community with a modern educational facility. Works are progressing on schedule with classroom blocks and associated infrastructure underway.",
+    highlights: [
+      "Classroom block construction",
+      "Ablution and water facilities",
+      "Site works and access pathways",
+      "Electrical and solar installation",
+    ],
+  },
+  {
+    id: "05",
+    name: "Putei Primary School",
+    location: "Gulf Province, PNG",
+    scope: "Primary School Facility",
+    status: "In Progress",
+    contract: "Open Member for Kerema",
+    description: "The Putei Primary School is currently in active construction phase. SK Proteck is working closely with the local community and contracting authority to ensure timely and quality delivery of this important education facility.",
+    highlights: [
+      "Classroom block construction",
+      "Ablution and water facilities",
+      "Site works underway",
+      "Community engagement ongoing",
     ],
   },
 ];
 
 const metrics = [
-  { label: "Total Projects", value: "3" },
-  { label: "Classrooms Built", value: "24" },
-  { label: "Province Served", value: "Gulf" },
+  { label: "Total Projects", value: "5" },
+  { label: "Completed", value: "3" },
+  { label: "In Progress", value: "2" },
   { label: "Delivery Rate", value: "100%" },
 ];
 
@@ -76,12 +109,12 @@ export default function ProjectsPage() {
               Building Futures <span className="text-[#dc2626]">in Gulf Province</span>
             </h1>
             <p className="text-white/60 text-sm leading-relaxed">
-              Contracted by the Open Member for Kerema, SK Proteck has successfully delivered three school construction projects across Eastern Gulf Province.
+              Contracted by the Open Member for Kerema, SK Proteck has delivered three completed school projects and has two more currently under construction across Gulf Province.
             </p>
           </div>
 
           {/* Metrics */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
             {metrics.map((m) => (
               <div key={m.label} className="bg-white/5 border border-white/10 rounded-xl p-5">
                 <p className="text-2xl font-black text-[#dc2626]">{m.value}</p>
@@ -92,16 +125,16 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* Project Details */}
+      {/* Completed Projects */}
       <section className="py-8 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
+          <div className="mb-6">
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Project Details</span>
             <h2 className="text-xl font-bold text-[#1a1a2a] mt-1">Completed Projects</h2>
           </div>
           <div className="space-y-5">
-            {projects.map((project) => (
-              <div key={project.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-sm transition-all" style={{ borderTop: "3px solid #dc2626" }}>
+            {completedProjects.map((project) => (
+              <div key={project.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-sm transition-all">
                 <div className="flex flex-col lg:flex-row">
                   {/* Left panel */}
                   <div className="bg-[#f8fafc] lg:w-52 p-6 flex flex-col justify-between border-r border-gray-200">
@@ -145,6 +178,68 @@ export default function ProjectsPage() {
                         {project.highlights.map((h) => (
                           <li key={h} className="flex items-start gap-2 text-xs text-gray-500">
                             <CheckCircle className="w-3 h-3 text-[#dc2626] shrink-0 mt-0.5" />
+                            {h}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* In-Progress Projects */}
+      <section className="py-8 border-b border-gray-200 bg-[#f8fafc]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Active Construction</span>
+            <h2 className="text-xl font-bold text-[#1a1a2a] mt-1">In Progress</h2>
+          </div>
+          <div className="space-y-5">
+            {inProgressProjects.map((project) => (
+              <div key={project.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-sm transition-all">
+                <div className="flex flex-col lg:flex-row">
+                  {/* Left panel */}
+                  <div className="bg-[#f8fafc] lg:w-52 p-6 flex flex-col justify-between border-r border-gray-200">
+                    <div>
+                      <span className="text-5xl font-black text-gray-100 leading-none select-none">{project.id}</span>
+                      <div className="flex items-center gap-1.5 mt-3 bg-amber-50 border border-amber-200 rounded-lg px-2 py-1 w-fit">
+                        <Clock className="w-3 h-3 text-amber-600" />
+                        <span className="text-xs text-amber-600 font-mono">{project.status}</span>
+                      </div>
+                    </div>
+                    <div className="mt-6 space-y-2">
+                      <div className="flex items-start gap-2 text-xs text-gray-500">
+                        <MapPin className="w-3 h-3 text-[#dc2626] mt-0.5 shrink-0" />
+                        {project.location}
+                      </div>
+                      <div className="flex items-center gap-2 text-xs text-gray-500">
+                        <Building2 className="w-3 h-3 text-[#dc2626] shrink-0" />
+                        {project.scope}
+                      </div>
+                      <div className="flex items-start gap-2 text-xs text-gray-500">
+                        <Award className="w-3 h-3 text-[#dc2626] mt-0.5 shrink-0" />
+                        {project.contract}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 p-6">
+                    <h3 className="text-base font-bold text-[#1a1a2a] mb-3">{project.name}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5">{project.description}</p>
+                    <div>
+                      <h4 className="text-xs font-mono text-gray-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                        <Users className="w-3 h-3 text-[#dc2626]" />
+                        Scope of Works
+                      </h4>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                        {project.highlights.map((h) => (
+                          <li key={h} className="flex items-start gap-2 text-xs text-gray-500">
+                            <Clock className="w-3 h-3 text-amber-500 shrink-0 mt-0.5" />
                             {h}
                           </li>
                         ))}
