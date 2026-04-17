@@ -47,25 +47,20 @@ export default function Hero() {
 
           {/* Overline */}
           <div className="animate-fade-up flex items-center gap-3 mb-8">
-            <div className="h-px w-10 bg-[#f59e0b]" />
             <span className="text-[#f59e0b] text-[11px] font-mono font-semibold uppercase tracking-[0.25em]">
               Papua New Guinea&apos;s Industrial Power Experts
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="animate-fade-up-delay font-black tracking-tight leading-[0.92] mb-8">
-            <span className="block text-[#d0d0d0] text-4xl sm:text-5xl lg:text-6xl">
-              Powering
+          <h1 className="animate-fade-up-delay font-black tracking-tight leading-tight mb-8">
+            <span className="block text-3xl sm:text-4xl lg:text-5xl">
+              <span className="text-[#d0d0d0]">Powering </span>
+              <span className="text-[#f59e0b]">Industry.</span>
             </span>
-            <span className="block text-[#f59e0b] text-4xl sm:text-5xl lg:text-6xl" style={{ textShadow: "0 0 100px rgba(245,158,11,0.25)" }}>
-              Industry.
-            </span>
-            <span className="block text-[#d0d0d0] text-4xl sm:text-5xl lg:text-6xl">
-              Building
-            </span>
-            <span className="block text-[#f59e0b] text-4xl sm:text-5xl lg:text-6xl" style={{ textShadow: "0 0 100px rgba(245,158,11,0.25)" }}>
-              Communities.
+            <span className="block text-3xl sm:text-4xl lg:text-5xl">
+              <span className="text-[#d0d0d0]">Building </span>
+              <span className="text-[#f59e0b]">Communities.</span>
             </span>
           </h1>
 
