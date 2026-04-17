@@ -107,7 +107,7 @@ export default function TermsOfUsePage() {
             {sections.map((section, i) => (
               <div key={section.title} className="border-b border-gray-100 pb-8 last:border-0">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-7 h-7 bg-[#dc2626] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-7 h-7 bg-[#dc2626] rounded-xl flex items-center justify-center shrink-0 mt-0.5">
                     <span className="text-white font-black text-[10px]">{String(i + 1).padStart(2, "0")}</span>
                   </div>
                   <h2 className="text-base font-bold text-[#1a1a2a] tracking-tight">{section.title}</h2>
