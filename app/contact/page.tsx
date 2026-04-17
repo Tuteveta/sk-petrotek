@@ -36,7 +36,7 @@ export default function ContactPage() {
 
             {/* Form panel */}
             <div className="lg:col-span-3">
-              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden" style={{ borderTop: "3px solid #dc2626" }}>
+              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
                 <div className="px-6 py-4 border-b border-gray-100">
                   <h2 className="text-sm font-bold text-[#1a1a2a] uppercase tracking-wider">Send Us a Message</h2>
                 </div>
