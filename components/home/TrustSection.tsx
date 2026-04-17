@@ -65,11 +65,11 @@ export default function TrustSection() {
             return (
               <div
                 key={point.title}
-                className="bg-[#f8fafc] border border-gray-200 p-8 hover:border-gray-300 transition-colors"
+                className="bg-[#f8fafc] border border-gray-200 rounded-xl p-8 hover:border-gray-300 transition-colors"
                 style={{ borderTop: `3px solid ${point.color}` }}
               >
                 <div
-                  className="w-12 h-12 flex items-center justify-center mb-6 border-2"
+                  className="w-12 h-12 flex items-center justify-center mb-6 border-2 rounded-xl"
                   style={{ backgroundColor: `${point.color}12`, borderColor: `${point.color}40` }}
                 >
                   <Icon className="w-5 h-5" style={{ color: point.color }} />
