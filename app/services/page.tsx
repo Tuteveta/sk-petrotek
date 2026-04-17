@@ -95,7 +95,7 @@ export default function ServicesPage() {
     <div className="bg-white">
 
       {/* Page Hero */}
-      <section className="bg-[#334155] py-10">
+      <section className="bg-[#0f172a] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <Breadcrumb crumbs={[{ label: "Services" }]} />
@@ -173,7 +173,7 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#334155] rounded-xl p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="bg-[#0f172a] rounded-xl p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Get Started</span>
               <h2 className="text-xl font-bold text-white mt-1 mb-1">Need a Service? Let&apos;s Talk.</h2>

@@ -14,7 +14,7 @@ export default function ContactPage() {
     <div className="bg-white">
 
       {/* Page Hero */}
-      <section className="bg-[#334155] py-10">
+      <section className="bg-[#0f172a] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <Breadcrumb crumbs={[{ label: "Contact" }]} />

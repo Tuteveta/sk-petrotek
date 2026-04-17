@@ -36,7 +36,7 @@ export default function AboutPage() {
     <div className="bg-white">
 
       {/* Page Hero */}
-      <section className="bg-[#334155] py-10">
+      <section className="bg-[#0f172a] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <Breadcrumb crumbs={[{ label: "About" }]} />
@@ -143,7 +143,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {team.map((member) => (
               <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-4 hover:border-[#dc2626]/30 hover:shadow-sm transition-all">
-                <div className="w-12 h-12 rounded-xl bg-[#334155] flex items-center justify-center shrink-0 text-white font-black text-sm">
+                <div className="w-12 h-12 rounded-xl bg-[#0f172a] flex items-center justify-center shrink-0 text-white font-black text-sm">
                   {member.initials}
                 </div>
                 <div>
