@@ -88,12 +88,11 @@ export default function TrustSection() {
             {testimonials.map((t) => (
               <div
                 key={t.author}
-                className="bg-white border border-gray-200 px-5 py-4 flex items-start gap-4"
-                style={{ borderLeft: "3px solid #dc2626" }}
+                className="bg-white border border-gray-200 rounded-xl px-5 py-4 flex items-start gap-4"
               >
                 <Quote className="w-4 h-4 text-[#dc2626]/30 shrink-0 mt-0.5" />
                 <div className="flex-1 min-w-0">
-                  <p className="text-gray-500 text-xs leading-relaxed italic mb-3">
+                  <p className="text-gray-500 text-xs leading-relaxed mb-3">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   <div className="flex items-center justify-between gap-3">
