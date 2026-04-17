@@ -55,7 +55,7 @@ export default function AboutPage() {
       <section className="py-8 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="bg-white border border-gray-200 rounded-xl p-7" style={{ borderLeft: "3px solid #dc2626" }}>
+            <div className="bg-white border border-gray-200 rounded-xl p-7">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-lg flex items-center justify-center">
                   <Target className="w-4 h-4 text-[#dc2626]" />
@@ -66,15 +66,15 @@ export default function AboutPage() {
                 To deliver world-class generator services and industrial power solutions across Papua New Guinea, while actively investing in the communities that sustain us.
               </p>
             </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-7" style={{ borderLeft: "3px solid #1a1a1a" }}>
+            <div className="bg-white border border-gray-200 rounded-xl p-7">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-[#1a1a1a]/10 border border-[#1a1a1a]/20 rounded-lg flex items-center justify-center">
-                  <Eye className="w-4 h-4 text-[#1a1a1a]" />
+                <div className="w-8 h-8 bg-[#dc2626]/10 border border-[#dc2626]/20 rounded-lg flex items-center justify-center">
+                  <Eye className="w-4 h-4 text-[#dc2626]" />
                 </div>
                 <h2 className="text-sm font-bold text-[#1a1a2a] uppercase tracking-wider">Our Vision</h2>
               </div>
               <p className="text-gray-500 leading-relaxed text-sm">
-                To be the most trusted industrial services provider in the Pacific — recognised not just for technical excellence, but for the schools built, communities powered, and lives changed.
+                To be the most trusted industrial services provider in the Pacific, recognised not just for technical excellence, but for the schools built, communities powered, and lives changed.
               </p>
             </div>
           </div>
@@ -88,23 +88,20 @@ export default function AboutPage() {
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Our Journey</span>
             <h2 className="text-xl font-bold text-[#1a1a2a] mt-1">Company Milestones</h2>
           </div>
-          <div className="relative">
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200 md:left-1/2" />
-            <div className="space-y-5">
-              {milestones.map((m, i) => (
-                <div key={m.year} className={`flex gap-6 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
-                  <div className={`flex-1 pl-10 md:pl-0 ${i % 2 === 0 ? "md:text-right md:pr-10" : "md:pl-10"}`}>
-                    <div className="bg-white border border-gray-200 rounded-lg px-4 py-3 inline-block w-full md:max-w-sm">
-                      <p className="text-gray-500 text-xs">{m.event}</p>
-                    </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {milestones.map((m, i) => (
+              <div key={m.year} className="bg-white border border-gray-200 rounded-xl p-5 flex gap-4">
+                <div className="shrink-0">
+                  <div className="w-12 h-12 bg-[#dc2626] rounded-lg flex items-center justify-center">
+                    <span className="text-white font-black text-[10px] leading-tight text-center">{m.year}</span>
                   </div>
-                  <div className="absolute left-0 md:static md:shrink-0 w-8 h-8 bg-[#dc2626] rounded-lg flex items-center justify-center z-10">
-                    <span className="text-white font-black text-[9px] text-center leading-tight">{m.year}</span>
-                  </div>
-                  <div className="hidden md:flex flex-1" />
                 </div>
-              ))}
-            </div>
+                <div className="flex flex-col justify-center">
+                  <p className="text-[10px] font-mono text-gray-400 uppercase tracking-widest mb-1">Step {String(i + 1).padStart(2, "0")}</p>
+                  <p className="text-sm font-medium text-[#1a1a2a] leading-snug">{m.event}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
