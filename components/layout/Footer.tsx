@@ -33,19 +33,38 @@ export default function Footer() {
   return (
     <footer className="bg-[#0f172a]">
 
-      {/* Pre-footer CTA card */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="bg-[#0f172a] rounded-xl overflow-hidden">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 px-8 py-7">
+      {/* Pre-footer CTA — 2 columns */}
+      <div className="border-t border-[#1e293b]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            {/* Left: Service enquiry */}
+            <div className="bg-[#131c2e] border border-[#1e293b] rounded-xl px-8 py-7 flex flex-col justify-between gap-6">
+              <div>
+                <p className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Get Started</p>
+                <h3 className="text-xl font-black text-white tracking-tight mb-1.5">
+                  Need a Service? Let&apos;s Talk.
+                </h3>
+                <p className="text-white/40 text-xs leading-relaxed">Request a free site assessment or quote from our engineering team today.</p>
+              </div>
+              <Link href="/contact" className="self-start">
+                <button className="group inline-flex items-center gap-2 h-10 px-6 bg-[#dc2626] text-white text-xs font-black uppercase tracking-[0.15em] rounded-lg hover:bg-[#b91c1c] transition-colors">
+                  Request a Quote
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </Link>
+            </div>
+
+            {/* Right: Partner CTA */}
+            <div className="bg-[#131c2e] border border-[#1e293b] rounded-xl px-8 py-7 flex flex-col justify-between gap-6">
               <div>
                 <p className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Partner with PNG&apos;s industrial leader</p>
-                <h3 className="text-xl font-black text-white tracking-tight">
+                <h3 className="text-xl font-black text-white tracking-tight mb-1.5">
                   Ready to work with SK Proteck?
                 </h3>
-                <p className="text-white/40 text-xs mt-1.5">Generator services, maintenance contracts, and community infrastructure — all in one team.</p>
+                <p className="text-white/40 text-xs leading-relaxed">Generator services, maintenance contracts, and community infrastructure — all in one team.</p>
               </div>
-              <div className="flex items-center gap-3 shrink-0">
+              <div className="flex items-center gap-3">
                 <Link href="/contact">
                   <button className="group inline-flex items-center gap-2 h-10 px-6 bg-[#dc2626] text-white text-xs font-black uppercase tracking-[0.15em] rounded-lg hover:bg-[#b91c1c] transition-colors">
                     Get a Quote
@@ -60,6 +79,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>

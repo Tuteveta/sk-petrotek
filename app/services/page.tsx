@@ -1,5 +1,4 @@
 import { Filter, Droplets, Wrench, BarChart2, School, CheckCircle, ArrowRight } from "lucide-react";
-import Link from "next/link";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const services = [
@@ -170,24 +169,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#0f172a] rounded-xl p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div>
-              <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Get Started</span>
-              <h2 className="text-xl font-bold text-white mt-1 mb-1">Need a Service? Let&apos;s Talk.</h2>
-              <p className="text-white/50 text-sm">Request a free site assessment or quote from our engineering team today.</p>
-            </div>
-            <Link href="/contact" className="shrink-0">
-              <button className="group inline-flex items-center gap-2 h-10 px-6 bg-[#dc2626] text-white text-sm font-bold uppercase tracking-wider rounded-lg hover:bg-[#b91c1c] transition-colors">
-                Request a Quote
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
