@@ -40,14 +40,12 @@ export default function ServicesOverview() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <div className="h-px w-10 bg-[#f59e0b]" />
               <span className="text-[#f59e0b] text-xs font-mono font-semibold uppercase tracking-[0.2em]">
                 Service Catalogue
               </span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
-              End-to-End Power<br />
-              <span className="text-[#f59e0b]">Solutions</span>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
+              End-to-End Power <span className="text-[#f59e0b]">Solutions</span>
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed max-w-lg mt-4">
               From generator servicing to community infrastructure, SK Proteck delivers reliable, professional results across Papua New Guinea.
