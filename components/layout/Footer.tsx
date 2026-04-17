@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Zap, Mail, Phone, MapPin, Circle, ArrowRight } from "lucide-react";
+import { Zap, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -101,10 +101,6 @@ export default function Footer() {
             <p className="text-xs text-[#5a6374] leading-relaxed mb-5">
               Papua New Guinea&apos;s trusted partner for generator services, industrial power solutions, and community infrastructure development.
             </p>
-            <div className="flex items-center gap-1.5 mb-5">
-              <Circle className="w-1.5 h-1.5 fill-[#73bf69] text-[#73bf69]" />
-              <span className="text-[#73bf69] text-[10px] font-mono">All services operational</span>
-            </div>
           </div>
 
           {/* Column 2: Navigation */}
@@ -153,10 +149,6 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="bg-[#73bf69]/5 border border-[#73bf69]/20 px-3 py-2">
-              <p className="text-[#73bf69] text-[10px] font-mono">All projects completed ✓</p>
-              <p className="text-[#5a6374] text-[10px] font-mono">Gulf Province, PNG</p>
-            </div>
           </div>
 
           {/* Column 5: Contact */}
