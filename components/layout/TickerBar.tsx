@@ -1,16 +1,14 @@
 import { Circle } from "lucide-react";
 
 const items = [
-  { label: "Fleet Uptime", value: "98.3%" },
-  { label: "Emergency Response", value: "< 4 hrs" },
-  { label: "Jobs Completed", value: "187" },
-  { label: "Operations", value: "24 / 7" },
-  { label: "Client Retention", value: "96%" },
-  { label: "Generators Serviced", value: "200+" },
+  { label: "Schools Built", value: "3" },
+  { label: "Projects Completed", value: "187" },
   { label: "Project Delivery Rate", value: "100%" },
   { label: "Years in Service", value: "15+" },
-  { label: "Schools Built", value: "3" },
+  { label: "Client Retention", value: "96%" },
   { label: "Province Served", value: "Gulf Province, PNG" },
+  { label: "Active Projects", value: "2" },
+  { label: "Contract Authority", value: "Open Member for Kerema" },
 ];
 
 function TickerItem({ label, value }: { label: string; value: string }) {

@@ -5,13 +5,13 @@ import { ArrowRight } from "lucide-react";
 const cards = [
   {
     label: "Who We Are",
-    title: "PNG's Industrial Power Partner",
+    title: "PNG's Infrastructure Partner",
     image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1200&q=80&fit=crop",
     href: "/about",
   },
   {
     label: "What We Do",
-    title: "Generator Services & Maintenance",
+    title: "Construction & Civil Works",
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80&fit=crop",
     href: "/services",
   },

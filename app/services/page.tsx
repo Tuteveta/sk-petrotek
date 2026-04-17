@@ -1,64 +1,51 @@
-import { Filter, Droplets, Wrench, School, CheckCircle, ArrowRight } from "lucide-react";
+import { Wrench, School, CheckCircle, ArrowRight, HardHat, Layers } from "lucide-react";
 import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const services = [
   {
-    icon: Filter,
-    title: "Generator Filtering",
+    icon: HardHat,
+    title: "Civil Construction",
     tag: "Core Service",
-    description: "Contaminated fuel and air are the leading causes of generator failure. Our comprehensive filtration services protect your investment and extend equipment life.",
+    description: "Full-scope civil construction from site preparation to structural completion. We deliver quality builds on time and within budget across Papua New Guinea.",
     features: [
-      "Primary & secondary fuel filter replacement",
-      "High-performance air filtration systems",
-      "Fuel polishing and contamination removal",
-      "Custom filtration schedules by load profile",
-      "Filter condition monitoring and reporting",
+      "Site clearing and preparation",
+      "Foundation and footing works",
+      "Structural block and masonry",
+      "Roofing and cladding",
+      "External paving and pathways",
     ],
   },
   {
-    icon: Droplets,
-    title: "Generator Cleaning",
+    icon: Layers,
+    title: "Facilities & Infrastructure",
     tag: "Core Service",
-    description: "A clean generator runs cooler, more efficiently, and lasts longer. Our deep-clean protocols remove carbon buildup, corrosion, and debris from all major components.",
+    description: "End-to-end delivery of essential community facilities including water supply, sanitation, electrical systems, and access infrastructure.",
     features: [
-      "Full engine and alternator deep clean",
-      "Corrosion treatment and protection coating",
-      "Cooling system flush and antifreeze service",
-      "Enclosure and panel cleaning",
-      "Post-clean inspection and report",
-    ],
-  },
-  {
-    icon: Droplets,
-    title: "Oil Services",
-    tag: "Core Service",
-    description: "Engine lubrication is critical to generator longevity. SK Proteck provides full oil lifecycle management — from analysis to change to optimized lubrication schedules.",
-    features: [
-      "Oil sampling and laboratory analysis",
-      "Full oil and filter change service",
-      "Lubrication management programs",
-      "Coolant and hydraulic fluid service",
-      "Oil consumption monitoring",
+      "Water supply and reticulation",
+      "Ablution and sanitation facilities",
+      "Electrical and solar installation",
+      "Rainwater harvesting systems",
+      "Site access and drainage works",
     ],
   },
   {
     icon: Wrench,
-    title: "Maintenance & Repair",
-    tag: "24/7 Available",
-    description: "From scheduled preventive maintenance to emergency breakdown repair, our certified technicians keep your generators running when you need them most.",
+    title: "Project Management",
+    tag: "Full Service",
+    description: "Dedicated project management from scoping through to handover. We ensure every build is delivered on schedule, within budget, and to specification.",
     features: [
-      "Scheduled preventive maintenance contracts",
-      "Emergency callout and repair — 24/7",
-      "Full load bank testing and commissioning",
-      "Governor, AVR, and control panel repair",
-      "Exhaust, cooling, and fuel system repair",
+      "Scope and feasibility assessment",
+      "Programme scheduling and reporting",
+      "Quality assurance and inspections",
+      "Stakeholder and community engagement",
+      "Defects liability and handover management",
     ],
   },
   {
     icon: School,
     title: "Community Projects",
     tag: "Govt. Contracted",
-    description: "SK Proteck is a registered government contractor with a proven track record in community infrastructure. Our school projects in Gulf Province stand as testament to our construction capability.",
+    description: "SK Petroteck is a registered government contractor with a proven track record in community infrastructure. Our school projects in Gulf Province stand as testament to our capability.",
     features: [
       "School and educational facility construction",
       "Government contract execution",
@@ -71,7 +58,7 @@ const services = [
 
 const steps = [
   { step: "01", title: "Enquiry", desc: "Contact us via phone, email, or our website form." },
-  { step: "02", title: "Assessment", desc: "We visit your site and assess your generator and power needs." },
+  { step: "02", title: "Assessment", desc: "We visit your site and assess your construction and infrastructure needs." },
   { step: "03", title: "Proposal", desc: "You receive a detailed scope and fixed price quotation." },
   { step: "04", title: "Delivery", desc: "Our team executes — on time, with full reporting." },
 ];
@@ -87,10 +74,10 @@ export default function ServicesPage() {
             <Breadcrumb crumbs={[{ label: "Services" }]} />
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Service Catalogue</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight mt-2 mb-4">
-              Complete Industrial <span className="text-[#dc2626]">Power Services</span>
+              Construction & <span className="text-[#dc2626]">Infrastructure Services</span>
             </h1>
             <p className="text-white/60 text-sm leading-relaxed">
-              SK Proteck provides end-to-end generator and industrial power services, backed by 15+ years of field experience across Papua New Guinea.
+              SK Petroteck Limited provides end-to-end construction and infrastructure services, backed by 15+ years of experience delivering community projects across Papua New Guinea.
             </p>
           </div>
         </div>

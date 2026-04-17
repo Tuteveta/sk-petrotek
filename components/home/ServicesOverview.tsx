@@ -5,18 +5,18 @@ const services = [
   {
     icon: Settings,
     tag: "Core Service",
-    title: "Generator Services",
-    description: "Comprehensive generator filtering, cleaning, and oil services to keep your power systems running at peak efficiency. We handle all brands and capacities across Papua New Guinea.",
-    features: ["Filter Replacement", "Fuel Filtration", "Oil Analysis & Change", "Lubrication Management"],
+    title: "Civil Construction",
+    description: "Full-scope civil construction services from site preparation to structural completion. We deliver quality builds on time and within budget across Papua New Guinea.",
+    features: ["Site Preparation", "Foundation Works", "Structural Construction", "External Paving"],
     href: "/services",
     accentColor: "#dc2626",
   },
   {
     icon: Wrench,
-    tag: "24/7 Available",
-    title: "Maintenance & Repair",
-    description: "Scheduled preventive maintenance programs and emergency repair services. Our certified technicians ensure minimal downtime for your operations — day or night.",
-    features: ["Scheduled Maintenance", "Emergency Repair 24/7", "Load Testing", "Corrosion Protection"],
+    tag: "Infrastructure",
+    title: "Facilities & Infrastructure",
+    description: "End-to-end infrastructure delivery including water supply systems, electrical installations, ablution facilities, and access infrastructure for communities across PNG.",
+    features: ["Water Supply Systems", "Electrical Installation", "Ablution Facilities", "Access Pathways"],
     href: "/services",
     accentColor: "#dc2626",
   },
@@ -45,10 +45,10 @@ export default function ServicesOverview() {
               </span>
             </div>
             <h2 className="text-xl lg:text-2xl font-black text-[#1a1a2a] tracking-tight leading-tight max-w-xl">
-              End-to-End Power <span className="text-[#dc2626]">Solutions</span>
+              End-to-End Construction <span className="text-[#dc2626]">Solutions</span>
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed max-w-lg mt-3">
-              From generator servicing to community infrastructure, SK Proteck delivers reliable, professional results across Papua New Guinea.
+              From civil construction to community infrastructure, SK Petroteck delivers reliable, professional results across Papua New Guinea.
             </p>
           </div>
           <Link href="/services" className="shrink-0">

@@ -4,13 +4,13 @@ const trustPoints = [
   {
     icon: ShieldCheck,
     title: "Certified Technicians",
-    desc: "All engineers professionally certified and trained to international generator service standards.",
+    desc: "All our engineers and site teams are professionally certified and trained to international construction standards.",
     color: "#dc2626",
   },
   {
     icon: Clock,
     title: "24/7 Emergency Support",
-    desc: "Power failures don't keep business hours. Our rapid response team is available around the clock.",
+    desc: "Project deadlines don't wait. Our project management team is responsive and available to keep works on track.",
     color: "#dc2626",
   },
   {
@@ -36,10 +36,10 @@ const testimonials = [
     tagColor: "#dc2626",
   },
   {
-    quote: "Our generator maintenance contract with SK Proteck has reduced downtime by over 80%. They are genuinely reliable.",
-    author: "Industrial Client",
-    role: "Port Moresby Operations",
-    tag: "Maintenance Client",
+    quote: "SK Petroteck completed our community facility ahead of schedule. Their workmanship and site management were outstanding.",
+    author: "Community Representative",
+    role: "Gulf Province, Papua New Guinea",
+    tag: "Construction Client",
     tagColor: "#dc2626",
   },
 ];

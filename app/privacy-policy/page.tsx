@@ -19,7 +19,7 @@ const sections = [
     title: "How We Use Your Information",
     content: [
       "To respond to your enquiries, provide quotations, and deliver the services you have requested.",
-      "To communicate updates about your service requests, maintenance schedules, or project milestones.",
+      "To communicate updates about your service requests, project progress, or construction milestones.",
       "To improve our website and service offerings based on aggregated, non-identifiable usage data.",
       "We do not sell, rent, or trade your personal information to third parties.",
     ],

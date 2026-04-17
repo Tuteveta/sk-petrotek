@@ -12,10 +12,10 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "SK Proteck | Generator Services & Industrial Power Solutions",
+  title: "SK Petroteck Limited | Construction & Infrastructure PNG",
   description:
-    "SK Proteck — Papua New Guinea's trusted partner for generator filtering, cleaning, oil services, maintenance, and community infrastructure projects.",
-  keywords: "generator services, PNG, Papua New Guinea, industrial power, generator maintenance, Gulf Province, school construction",
+    "SK Petroteck Limited — Papua New Guinea's trusted partner for community infrastructure, school construction, and civil works projects across Gulf Province.",
+  keywords: "construction, PNG, Papua New Guinea, infrastructure, school construction, Gulf Province, community development, Kerema",
 };
 
 export default function RootLayout({

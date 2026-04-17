@@ -48,7 +48,7 @@ const completedProjects = [
     highlights: [
       "Full classroom blocks",
       "Administration and staff facilities",
-      "Generator-backed power system",
+      "Solar lighting integration",
       "Rainwater harvesting system",
       "Fully handed over to community",
     ],

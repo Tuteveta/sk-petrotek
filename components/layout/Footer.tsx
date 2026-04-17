@@ -10,10 +10,9 @@ const quickLinks = [
 ];
 
 const services = [
-  "Generator Filtering",
-  "Generator Cleaning",
-  "Oil Services",
-  "Maintenance & Repair",
+  "Civil Construction",
+  "Facilities & Infrastructure",
+  "Project Management",
   "Community Projects",
 ];
 
@@ -57,11 +56,11 @@ export default function Footer() {
             {/* Right: Partner CTA */}
             <div className="bg-[#131c2e] border border-[#1e293b] rounded-xl px-8 py-7 flex flex-col justify-between gap-6">
               <div>
-                <p className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Partner with PNG&apos;s industrial leader</p>
+                <p className="text-[#dc2626] text-[10px] font-mono uppercase tracking-[0.2em] mb-2">Partner with PNG&apos;s construction leader</p>
                 <h3 className="text-xl font-black text-white tracking-tight mb-1.5">
                   Ready to work with SK Proteck?
                 </h3>
-                <p className="text-white/40 text-xs leading-relaxed">Generator services, maintenance contracts, and community infrastructure — all in one team.</p>
+                <p className="text-white/40 text-xs leading-relaxed">Construction, infrastructure delivery, and community development — all in one team.</p>
               </div>
               <div className="flex items-center gap-3">
                 <Link href="/contact">
@@ -100,7 +99,7 @@ export default function Footer() {
               <span className="text-[#8e9aad] text-[11px] font-semibold tracking-wide">Petroteck Limited</span>
             </Link>
             <p className="text-xs text-[#5a6374] leading-relaxed mb-5">
-              Papua New Guinea&apos;s trusted partner for generator services, industrial power solutions, and community infrastructure development.
+              Papua New Guinea&apos;s trusted partner for construction, civil works, and community infrastructure development.
             </p>
           </div>
 
@@ -177,7 +176,7 @@ export default function Footer() {
             </ul>
             <div className="border-l-2 border-[#dc2626] pl-3 py-1">
               <p className="text-[#dc2626] text-[10px] font-mono font-semibold">24/7 Emergency Line</p>
-              <p className="text-[#5a6374] text-[10px] font-mono">Generator failure? Call now.</p>
+              <p className="text-[#5a6374] text-[10px] font-mono">Project enquiry? Call now.</p>
             </div>
           </div>
         </div>
@@ -198,7 +197,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="text-[10px] text-[#5a6374] font-mono hidden md:block">
-            Powering Industry. Building Communities.
+            Building Infrastructure. Transforming Communities.
           </p>
         </div>
       </div>

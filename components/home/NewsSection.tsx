@@ -13,17 +13,17 @@ const featured = {
 
 const news = [
   {
-    category: "Operations",
+    category: "Projects",
     date: "April 2026",
-    title: "Fleet Uptime Reaches Record 100% for Q1 2026",
-    excerpt: "Preventive maintenance contracts deliver zero unplanned outages across all managed generator fleets in the Port Moresby commercial precinct.",
-    href: "/services",
+    title: "Kukia Primary School Construction Reaches Structural Milestone",
+    excerpt: "Structural works on the Kukia Primary School are progressing ahead of schedule, with classroom blocks now at roof level.",
+    href: "/projects",
   },
   {
-    category: "Expansion",
-    date: "April 2026",
-    title: "SK Proteck Signs New Maintenance Contracts in Port Moresby Commercial Precinct",
-    excerpt: "Three new long-term preventive maintenance agreements signed with commercial and industrial operators in NCD.",
+    category: "Contracts",
+    date: "March 2026",
+    title: "SK Petroteck Awarded New Infrastructure Contract in Kerema District",
+    excerpt: "A new civil works contract has been awarded under the Open Member for Kerema's community development programme.",
     href: "/contact",
   },
   {

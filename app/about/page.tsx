@@ -3,9 +3,9 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 
 const values = [
   { icon: Shield, title: "Integrity", desc: "Full transparency and the highest professional standards in every engagement." },
-  { icon: Zap, title: "Excellence", desc: "Every generator serviced, every structure built — delivered with precision and uncompromising quality." },
+  { icon: Zap, title: "Excellence", desc: "Every structure built — delivered with precision and uncompromising quality." },
   { icon: Heart, title: "Community", desc: "Business success should translate into community development. Our school projects are a direct expression of this." },
-  { icon: TrendingUp, title: "Reliability", desc: "Industrial operations depend on uptime. We ensure your power systems — and our commitments — never fail." },
+  { icon: TrendingUp, title: "Reliability", desc: "Communities depend on us. We ensure our project commitments — timelines, quality, and budget — never fail." },
 ];
 
 const team = [
@@ -17,7 +17,7 @@ const team = [
 
 const milestones = [
   { year: "2009", event: "SK Proteck founded in Port Moresby, PNG" },
-  { year: "2012", event: "First major industrial generator contract secured" },
+  { year: "2012", event: "First major civil construction contract secured" },
   { year: "2015", event: "Expanded service fleet to serve nationwide clients" },
   { year: "2020", event: "Awarded government infrastructure contracts" },
   { year: "2023", event: "Contracted by Open Member for Kerema — school projects begin" },
@@ -28,7 +28,7 @@ const certs = [
   { icon: Award, label: "ISO 9001 Compliant", sub: "Quality Management" },
   { icon: Shield, label: "PNG IPA Registered", sub: "Business Registration" },
   { icon: Users, label: "Govt. Contractor", sub: "Kerema District" },
-  { icon: Zap, label: "Generator Certified", sub: "Multi-Brand Expertise" },
+  { icon: Zap, label: "Construction Certified", sub: "Civil Works Expertise" },
 ];
 
 export default function AboutPage() {
@@ -42,10 +42,10 @@ export default function AboutPage() {
             <Breadcrumb crumbs={[{ label: "About" }]} />
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">About SK Proteck</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight mt-2 mb-4">
-              15 Years of Power. <span className="text-[#dc2626]">A Legacy of Community.</span>
+              15 Years of Building. <span className="text-[#dc2626]">A Legacy of Community.</span>
             </h1>
             <p className="text-white/60 text-sm leading-relaxed">
-              Founded in Port Moresby, SK Proteck has grown from a specialist generator servicing firm into Papua New Guinea&apos;s most trusted industrial power and community development partner.
+              Founded in Port Moresby, SK Petroteck Limited has grown into Papua New Guinea&apos;s trusted construction and community infrastructure development partner.
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 <h2 className="text-sm font-bold text-[#1a1a2a] uppercase tracking-wider">Our Mission</h2>
               </div>
               <p className="text-gray-500 leading-relaxed text-sm">
-                To deliver world-class generator services and industrial power solutions across Papua New Guinea, while actively investing in the communities that sustain us.
+                To deliver world-class construction and infrastructure projects across Papua New Guinea, while actively investing in the communities that sustain us.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-7">
@@ -74,7 +74,7 @@ export default function AboutPage() {
                 <h2 className="text-sm font-bold text-[#1a1a2a] uppercase tracking-wider">Our Vision</h2>
               </div>
               <p className="text-gray-500 leading-relaxed text-sm">
-                To be the most trusted industrial services provider in the Pacific, recognised not just for technical excellence, but for the schools built, communities powered, and lives changed.
+                To be the most trusted construction and infrastructure company in the Pacific, recognised for the schools built, communities transformed, and lives changed.
               </p>
             </div>
           </div>

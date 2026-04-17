@@ -20,10 +20,10 @@ export default function ContactPage() {
             <Breadcrumb crumbs={[{ label: "Contact" }]} />
             <span className="text-[#dc2626] text-xs font-mono uppercase tracking-widest">Get in Touch</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight mt-2 mb-4">
-              Let&apos;s Power <span className="text-[#dc2626]">Your Business</span>
+              Let&apos;s Build <span className="text-[#dc2626]">Together</span>
             </h1>
             <p className="text-white/60 text-sm leading-relaxed">
-              Whether you need a generator service quote, a maintenance contract, or want to discuss a construction project — our team is ready to help.
+              Whether you need a project quote, want to discuss a construction contract, or have an infrastructure enquiry — our team is ready to help.
             </p>
           </div>
         </div>
@@ -94,9 +94,9 @@ export default function ContactPage() {
               <div className="bg-[#dc2626]/5 border border-[#dc2626]/20 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-2">
                   <AlertTriangle className="w-4 h-4 text-[#dc2626]" />
-                  <h3 className="text-[#dc2626] font-bold text-sm">Emergency Generator Support</h3>
+                  <h3 className="text-[#dc2626] font-bold text-sm">Urgent Project Enquiries</h3>
                 </div>
-                <p className="text-gray-500 text-xs mb-4 leading-relaxed">Generator failure? Our technicians are on-call 24/7 for emergency response across PNG.</p>
+                <p className="text-gray-500 text-xs mb-4 leading-relaxed">Have an urgent project or contract enquiry? Our team is available to assist across PNG.</p>
                 <a
                   href="tel:+675XXXXXXXX"
                   className="inline-flex items-center gap-2 bg-[#dc2626] text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-[#b91c1c] transition-colors uppercase tracking-wider"

@@ -1,8 +1,8 @@
 import { Award, Wrench, School, CheckCircle, TrendingUp } from "lucide-react";
 
 const stats = [
-  { icon: Award, value: "15+", label: "Years Experience", desc: "Serving PNG's industrial sector", trend: "+2 YoY" },
-  { icon: Wrench, value: "200+", label: "Generators Serviced", desc: "Across all major brands", trend: "Multi-brand" },
+  { icon: Award, value: "15+", label: "Years Experience", desc: "Building PNG communities", trend: "+2 YoY" },
+  { icon: Wrench, value: "187+", label: "Projects Completed", desc: "Across Papua New Guinea", trend: "Ongoing" },
   { icon: School, value: "3", label: "Schools Built", desc: "Eastern Gulf Province, PNG", trend: "Govt. contracted" },
   { icon: CheckCircle, value: "100%", label: "Project Delivery", desc: "On time, every time", trend: "Zero delays" },
 ];

@@ -5,10 +5,9 @@ import type { ChangeEvent } from "react";
 import { CheckCircle, Send } from "lucide-react";
 
 const serviceOptions = [
-  "Generator Filtering",
-  "Generator Cleaning",
-  "Oil Services",
-  "Maintenance & Repair",
+  "Civil Construction",
+  "Facilities & Infrastructure",
+  "Project Management",
   "Community / Construction Projects",
   "Other",
 ];
@@ -104,7 +103,7 @@ export default function ContactForm() {
           Message <span className="text-[#dc2626]">*</span>
         </label>
         <textarea id="message" name="message" value={form.message} onChange={handleChange}
-          placeholder="Tell us about your generator, project, or requirements..."
+          placeholder="Tell us about your project, construction needs, or requirements..."
           rows={5} required
           className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs text-[#1a1a2a] placeholder:text-gray-400 focus:outline-none focus:border-[#dc2626] transition-colors resize-none" />
       </div>

@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Full-bleed background image */}
       <Image
         src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=85&fit=crop"
-        alt="Industrial generator operations"
+        alt="Construction and infrastructure operations"
         fill
         priority
         className="object-cover object-center"
@@ -36,25 +36,25 @@ export default function Hero() {
           {/* Overline */}
           <div className="animate-fade-up flex items-center gap-3 mb-6">
             <span className="text-white/70 text-[11px] font-mono font-semibold uppercase tracking-[0.25em]">
-              Papua New Guinea&apos;s Industrial Power Experts
+              Papua New Guinea&apos;s Infrastructure & Construction Experts
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="animate-fade-up-delay font-black tracking-tight leading-tight mb-6">
             <span className="block text-3xl sm:text-4xl lg:text-5xl">
-              <span className="text-white">Powering </span>
-              <span className="text-[#dc2626]">Industry.</span>
+              <span className="text-white">Building </span>
+              <span className="text-[#dc2626]">Infrastructure.</span>
             </span>
             <span className="block text-3xl sm:text-4xl lg:text-5xl">
-              <span className="text-white">Building </span>
+              <span className="text-white">Transforming </span>
               <span className="text-[#dc2626]">Communities.</span>
             </span>
           </h1>
 
           {/* Subtext */}
           <p className="animate-fade-up-delay-2 text-white/60 text-base leading-relaxed max-w-xl mb-10">
-            SK Proteck delivers world-class generator services, maintenance, and industrial power solutions across Papua New Guinea — while building schools in Gulf Province.
+            SK Petroteck Limited delivers quality construction and community infrastructure projects across Papua New Guinea — building schools and facilities that transform lives in Gulf Province.
           </p>
 
           {/* CTAs */}
